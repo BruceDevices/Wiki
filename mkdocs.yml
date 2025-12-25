@@ -1,7 +1,14 @@
 site_name: Bruce Wiki
 repo_url: https://github.com/BruceDevices/firmware
 repo_name: GitHub
-site_url: https://bruce.computer
+
+docs_dir: docs
+site_dir: site
+site_url: https://brucedevices.github.io/Wiki/
+use_directory_urls: true
+
+theme:
+  name: material
 
 theme:
   name: material
