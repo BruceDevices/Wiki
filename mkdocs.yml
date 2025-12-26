@@ -4,7 +4,7 @@ repo_name: GitHub
 
 docs_dir: docs
 site_dir: site
-site_url: https://brucedevices.github.io/Wiki/
+site_url: https://wiki.bruce.computer
 use_directory_urls: true
 
 theme:
@@ -13,7 +13,7 @@ theme:
 theme:
   name: material
   palette:
-    - scheme: slate  # Dark mode only (or add toggle for light/dark switch)
+    - scheme: slate
       primary: deep purple
       accent: purple
 
