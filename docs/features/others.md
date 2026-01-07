@@ -50,7 +50,7 @@ For more info on creating your own DuckyScripts [read here](https://docs.hak5.or
 #### Other Methods
 
 1. Via the SDCard/LittleFS file manager in the "Others" menu (select a `.txt` file)
-2. Remotely via the WebUI, click on the :material-play: icon to start playback
+2. Remotely via the [WebUI](../controlling-device/webui.md#features) click on the :material-play: icon to start playback
 3. Via a [serial cmd](../controlling-device/serial.md) e.g. `badusb run_from_file HelloWorld.txt`
 
 
