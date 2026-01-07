@@ -7,7 +7,7 @@ todo: Properly document each menu feature
 
 ![IR Main Menu](ir-main-menu.png)
 
-Various Intrared functions including TV-B-Gone, sending and receiving IR commands.
+Various Infrared functions including TV-B-Gone, sending and receiving IR commands.
 
 ![IR](ir.png)
 
