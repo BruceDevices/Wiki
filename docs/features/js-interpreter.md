@@ -1,6 +1,10 @@
 # JS Interpreter
 
+![JS Interpreter Main Menu](js-interpreter-main-menu.png)
+
 The Bruce JS Interpreter allows you to create apps or games using JavaScript.
+
+![JS Interpreter](js-interpreter.png)
 
 ## Example Scripts
 
