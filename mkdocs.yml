@@ -25,6 +25,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - toc:
+      permalink: "#"
+  - attr_list
 
 plugins:
   - search
@@ -38,11 +41,3 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
-
-markdown_extensions:
-  - toc:
-      permalink: "#"
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
