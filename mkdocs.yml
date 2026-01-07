@@ -1,4 +1,4 @@
-site_name: Bruce  Wiki
+site_name: Bruce Wiki
 site_url: https://wiki.bruce.computer
 repo_url: https://github.com/BruceDevices/firmware
 repo_name: GitHub
@@ -71,13 +71,14 @@ markdown_extensions:
 
 plugins:
   - search
-  - tags:
-      shadow_tags_prefix: _
-      shadow: false
-      shadow_tags:
-        - Draft
-        - Internal
-        - TODO
+  # - tags:
+  #     shadow_tags_suffix: Internal
+  #     shadow: false
+  #     shadow_on_serve: true
+  #     shadow_tags:
+  #       - Draft
+  #       - Internal
+  #       - TODO
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
   - awesome-pages
