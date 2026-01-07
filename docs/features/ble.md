@@ -6,6 +6,13 @@ todo: Formatting
 ---
 # BLE
 
+![BLE Main Menu](ble-main-menu.png)
+
+Features relating to BLE.
+
+![BLE](ble.png)
+
+
 ## Disconnect BLE
 If BLE is currently active, use this option to disconnect. No further explanation needed.
 
