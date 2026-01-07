@@ -1,0 +1,37 @@
+@media screen {
+  [data-md-color-scheme=slate][data-md-color-primary=bruce] {
+    --md-typeset-color:#ffffff;
+    --md-default-fg-color--light:#ffffff;
+  }
+}
+
+/* Light mode */
+[data-md-color-primary=bruce][data-md-color-scheme=default] {
+  --md-primary-fg-color: rgb(148, 62, 229);       /* primary text color */
+  --md-primary-bg-color: #ffffff;       /* primary background */
+  --md-default-bg-color: #ffffff;       /* page background */
+  --md-typeset-color: rgb(10,10,10);          /* main text color */
+}
+
+/* Dark mode */
+[data-md-color-primary=bruce][data-md-color-scheme=slate] {
+  --md-primary-fg-color: rgb(148, 62, 229);
+  --md-primary-bg-color: #ffffff;
+  --md-default-bg-color: rgb(10,10,10);
+  --md-typeset-color: #ffffff;
+}
+
+[data-md-color-accent=bruce] {
+  --md-accent-fg-color:rgb(148, 62, 229);
+  --md-accent-fg-color--transparent:#7c4dff1a;
+  --md-accent-bg-color:#fff;
+  --md-accent-bg-color--light:#ffffffb3;
+}
+[data-md-color-primary=bruce] {
+  --md-primary-fg-color:rgb(148, 62, 229);
+  --md-primary-fg-color--light:rgb(148, 62, 229);
+  --md-primary-fg-color--dark:rgb(148, 62, 229);
+  --md-primary-bg-color:#fff;
+  --md-primary-bg-color--light:#ffffffb3;
+  --md-default-bg-color: rgb(10, 10, 10);
+}

@@ -1,17 +1,17 @@
-![Bruce](https://raw.githubusercontent.com/pr3y/Bruce/main/media/pictures/bruce_banner.jpg)
+# Home
 
-1. <a href="#what">What Is Bruce?</a>
-2. <a href="#purpose">What Is Bruce For?</a>
-3. <a href="https://github.com/pr3y/Bruce/wiki/FAQ">FAQ</a>
+![Bruce](img/bruce_banner.png)
 
-<a name="what" />
+Test
+
+1. [What Is Bruce?](index.md#what-is-bruce)
+2. [What Is Bruce For?](index.md#what-is-bruce-for)
+3. [FAQ](faq.md)
 
 ## What Is Bruce?
 
-Bruce is meant to be a versatile ESP32 firmware that supports a ton of offensive features focusing to facilitate on Red Team operations. It also supports m5stack products and works great with Cardputer and Sticks.
-
-<a name="purpose" />
+Bruce is meant to be a versatile ESP32 firmware that supports a ton of offensive features focusing to facilitate on Red Team operations. It also supports products from various manufacturers like M5Stack (Cardputer and Sticks) and Lilygo (T-Embed and T-LoRa Pager).
 
 ## What Is Bruce For?
 
-Bruce stems from a keen observation within the community focused on devices like Flipper Zero. While these devices offered a glimpse into the world of offensive security, there was a palpable sense that something more could be achieved without being that overpriced, particularly with the robust and modular hardware ecosystem provided by m5stack products.
+Bruce stems from a keen observation within the community focused on devices like Flipper Zero. While these devices offered a glimpse into the world of offensive security, there was a palpable sense that something more could be achieved without being that overpriced, particularly with the robust and modular hardware ecosystem provided by M5Stack and Lilygo products.

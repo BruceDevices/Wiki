@@ -1,24 +1,56 @@
-site_name: Bruce Wiki
+site_name: Bruce  Wiki
+site_url: https://wiki.bruce.computer
 repo_url: https://github.com/BruceDevices/firmware
 repo_name: GitHub
+edit_uri: https://github.com/BruceDevices/Wiki/blob/main/docs/
 
 docs_dir: docs
 site_dir: site
-site_url: https://wiki.bruce.computer
 use_directory_urls: true
 
-theme:
-  name: material
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   name: material
   palette:
+    # Light mode (applies if OS prefers light)
+    - scheme: default
+      primary: bruce
+      accent: bruce
+      toggle:
+        icon: material/weather-night
+        name: Dark
+      media: "(prefers-color-scheme: light)"
+
+    # Dark mode (applies if OS prefers dark)
     - scheme: slate
-      primary: deep purple
-      accent: purple
+      primary: bruce
+      accent: bruce
+      toggle:
+        icon: material/weather-sunny
+        name: Light
+      media: "(prefers-color-scheme: dark)"
+
+  logo: img/logo.png
+  favicon: img/logo.png
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.action.edit
+    - content.action.view
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - XXXnavigation.tabs
+    - XXXnavigation.sections
+    - XXXnavigation.expand
+    - navigation.path
+    - XXXnavigation.indexes
 
 extra:
   generator: false
+  homepage: https://bruce.computer
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -28,3 +60,24 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - toc:
+      permalink: "#"
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+
+plugins:
+  - search
+  - tags:
+      shadow_tags_prefix: _
+      shadow: false
+      shadow_tags:
+        - Draft
+        - Internal
+        - TODO
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+  - awesome-pages
