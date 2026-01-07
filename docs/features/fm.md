@@ -70,7 +70,9 @@ Auto mode available.
 
 ### Broadcast Reserved
 
-> **Warning**: this could be illegal depending on your country. Educationnal purpose only.
+!!! danger
+
+    This could be illegal depending on your country. Educationnal purpose only.
 
 Works the same way as [Broadcast Standard](#broadcast-standard) but on reserved frequencies, which are 76 - 87.5 MHz.
 
@@ -93,7 +95,10 @@ Auto mode available.
 
 ### Hijack TA
 
-> **Warning**: this could be illegal depending on your country. Educationnal purpose only.
+!!! danger
+
+    This could be illegal depending on your country. Educationnal purpose only.
+
 
 *Work in progress*.
 

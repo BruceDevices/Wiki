@@ -60,7 +60,9 @@ TODO: incomplete
 
 ## Examples
 
-> **NOTE:** filenames are case-sensitive on LittleFS only, and cannot contain spaces/escape chars.
+!!! warning
+
+    Filenames are case-sensitive on LittleFS only and cannot contain spaces/escape chars.
 
 ### Text-to-Speech (requires a speaker)
 

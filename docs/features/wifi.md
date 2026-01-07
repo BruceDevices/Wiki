@@ -133,10 +133,10 @@ By including a specific tag in the first line of your HTML file, Bruce will auto
 * **Ease of Use** Set up AP names directly in your HTML files for faster deployment
 
 
-#### Notes
+!!! note
 
-* Ensure the `<!-- AP="..." -->` tag is in the **very first line** of the file.
-* The feature does not affect the functionality of other HTML content
+    * Ensure the `<!-- AP="..." -->` tag is in the **very first line** of the file.
+    * The feature does not affect the functionality of other HTML content
 
 
 ## Listen TCP

@@ -23,7 +23,10 @@ Various Infrared functions including TV-B-Gone, sending and receiving IR command
 
 * **[KY-005](https://arduinomodules.info/ky-005-infrared-transmitter-sensor-module/)**: Infrared Transmitter
 * **[KY-022](https://arduinomodules.info/ky-022-infrared-receiver-module/)**: Infrared Receiver
-  *Note: These modules may be available under different names and may require modifications for optimal range when used with 3.3V boards. See [source 1](https://www.reddit.com/r/AskElectronics/comments/183mhh6/increase_voltage_power_for_ir_led_powered_by_33v/) and [source 2](https://circuitdigest.com/forums/internet-things/how-interface-hx-53-ir-transmitter-infrared-sensor-module-esp32) for details.*
+
+!!! warning
+
+    These KY-* modules may be available under different names and may require modifications for optimal range when used with 3.3V boards. See [source 1](https://www.reddit.com/r/AskElectronics/comments/183mhh6/increase_voltage_power_for_ir_led_powered_by_33v/) and [source 2](https://circuitdigest.com/forums/internet-things/how-interface-hx-53-ir-transmitter-infrared-sensor-module-esp32) for details.*
 
 * **[Elecrow Arduino Infrared Remote Control IOT Smart IR Module](https://www.elecrow.com/arduino-infrared-remote-control-iot-smart-ir-module.html)**: Functions well at 3.3V without requiring modifications.
 * **IR Hats for Raspberry Pi**: Designed for 3.3V operation; untested but expected to work.

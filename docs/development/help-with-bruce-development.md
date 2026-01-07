@@ -61,7 +61,9 @@ pio pkg search mylib
 pio pkg install -l mylib
 ```
 
-**Warning**: do not commit the `platform.io` auto generated file. Instead add your lib in the adequate section of the file. Or ask on the Discord where to write it.
+!!! warning
+
+    Do not commit the `platform.io` auto generated file. Instead add your lib in the adequate section of the file. Or ask on the Discord where to write it.
 
 
 ### Custom Libraries

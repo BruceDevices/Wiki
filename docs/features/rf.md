@@ -154,14 +154,19 @@ This setup is designed to share the SPI bus with the SD Card, but in this case y
 * **[FS1000A Transmitter + XY-MK-5V Receiver](https://components101.com/modules/433-mhz-rf-transmitter-module)**
     * **Frequency**: Fixed (usually 433MHz)
     * **Modulation**: Only ASK/OOK
-    * **Note**: Also sold under various names
+
+!!! info
+
+    The FS1000A and XY-MK-5V can be sold under various names
 
 * **Other Single-Pinned Modules**
     * [Comparison of Cheap RF Modules](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html)
 
 ![RF-Pins](rf-stick-pins.png)
 
-> **Note**: Some modules may have poor range; modifying the antenna can improve performance.
+!!! warning
+
+    Some modules may have poor range; modifying the antenna can improve performance.
 
 ### Default Pins
 

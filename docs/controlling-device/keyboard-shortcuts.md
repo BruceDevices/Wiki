@@ -1,6 +1,8 @@
 # Keyboard Shortcuts
 
-> **PLEASE NOTE:** Only available on Cardputer
+!!! info
+
+    Only available on Cardputer
 
 ## Usage
 

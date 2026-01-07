@@ -36,11 +36,10 @@ Scan for nearby Bluetooth Low Energy (BLE) devices effortlessly.
 
 Simulate a keyboard to deploy DuckyScripts to paired devices.
 
+!!! note
 
-### Note
-
-* The device **must be previously paired** for this feature to work.
-* After disconnecting BLE, you need to restart the device to enable this functionality again.
+    * The device **must be previously paired** for this feature to work.
+    * After disconnecting BLE, you need to restart the device to enable this functionality again.
 
 ## BLE Spam Features
 
