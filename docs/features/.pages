@@ -1,0 +1,17 @@
+arrange:
+  - wifi.md
+  - ble.md
+  - ethernet.md
+  - rf.md
+  - rfid.md
+  - ir.md
+  - fm.md
+  - files.md
+  - gps.md
+  - nrf24.md
+  - js-interpreter.md
+  - lora.md
+  - others.md
+  - clock.md
+  - connect.md
+  - config.md

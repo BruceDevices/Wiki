@@ -1,4 +1,4 @@
-# Bruce Wiki
+# Home
 
 ![Bruce](img/bruce_banner.png)
 

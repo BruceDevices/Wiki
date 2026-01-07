@@ -1,0 +1,11 @@
+arrange:
+  - index.md
+  - how-to-install.md
+  - faq.md
+  - features
+  - controlling-device
+  - configuration
+  - external-modules
+  - themes
+  - interpreter
+  - development
