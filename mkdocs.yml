@@ -71,6 +71,8 @@ markdown_extensions:
 
 plugins:
   - search
+  - social:
+      enabled: !ENV [CI, false]
   # - tags:
   #     shadow_tags_suffix: Internal
   #     shadow: false
