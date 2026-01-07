@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://wiki.bruce.computer/">
+        <link rel="canonical" href="https://wiki.bruce.computer/configuration/bruce.conf/">
       
       
+        <link rel="prev" href="../../controlling-device/webui/">
       
-        <link rel="next" href="how-to-install/">
+      
+        <link rel="next" href="../../external-modules/cc1101/">
       
       
         
       
       
-      <link rel="icon" href="img/logo.png">
+      <link rel="icon" href="../../img/logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Bruce Wiki</title>
+        <title>bruce.conf - Bruce Wiki</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,15 +61,15 @@
     
   
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Bruce Wiki" />
-<meta property="og:image" content="https://wiki.bruce.computer/assets/images/social/index.png" />
+<meta property="og:title" content="bruce.conf - Bruce Wiki" />
+<meta property="og:image" content="https://wiki.bruce.computer/assets/images/social/configuration/bruce.conf.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://wiki.bruce.computer/" />
+<meta property="og:url" content="https://wiki.bruce.computer/configuration/bruce.conf/" />
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:title" content="Bruce Wiki" />
-<meta property="twitter:image" content="https://wiki.bruce.computer/assets/images/social/index.png" />
+<meta property="twitter:title" content="bruce.conf - Bruce Wiki" />
+<meta property="twitter:image" content="https://wiki.bruce.computer/assets/images/social/configuration/bruce.conf.png" />
 </head>
   
   
@@ -87,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#home" class="md-skip">
+        <a href="#bruceconf" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +107,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://bruce.computer" title="Bruce Wiki" class="md-header__button md-logo" aria-label="Bruce Wiki" data-md-component="logo">
       
-  <img src="img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -122,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              bruce.conf
             
           </span>
         </div>
@@ -240,7 +242,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://bruce.computer" title="Bruce Wiki" class="md-nav__button md-logo" aria-label="Bruce Wiki" data-md-component="logo">
       
-  <img src="img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     Bruce Wiki
@@ -264,37 +266,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -310,48 +285,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-bruce" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Is Bruce?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-bruce-for" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Is Bruce For?
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -363,7 +296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="how-to-install/" class="md-nav__link">
+      <a href="../../how-to-install/" class="md-nav__link">
         
   
   
@@ -390,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
   
@@ -464,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/wifi/" class="md-nav__link">
+      <a href="../../features/wifi/" class="md-nav__link">
         
   
   
@@ -492,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/ble/" class="md-nav__link">
+      <a href="../../features/ble/" class="md-nav__link">
         
   
   
@@ -520,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/ethernet/" class="md-nav__link">
+      <a href="../../features/ethernet/" class="md-nav__link">
         
   
   
@@ -548,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/rf/" class="md-nav__link">
+      <a href="../../features/rf/" class="md-nav__link">
         
   
   
@@ -576,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/rfid/" class="md-nav__link">
+      <a href="../../features/rfid/" class="md-nav__link">
         
   
   
@@ -604,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/ir/" class="md-nav__link">
+      <a href="../../features/ir/" class="md-nav__link">
         
   
   
@@ -632,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/fm/" class="md-nav__link">
+      <a href="../../features/fm/" class="md-nav__link">
         
   
   
@@ -660,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/files/" class="md-nav__link">
+      <a href="../../features/files/" class="md-nav__link">
         
   
   
@@ -688,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/gps/" class="md-nav__link">
+      <a href="../../features/gps/" class="md-nav__link">
         
   
   
@@ -716,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/nrf24/" class="md-nav__link">
+      <a href="../../features/nrf24/" class="md-nav__link">
         
   
   
@@ -744,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/js-interpreter/" class="md-nav__link">
+      <a href="../../features/js-interpreter/" class="md-nav__link">
         
   
   
@@ -772,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/lora/" class="md-nav__link">
+      <a href="../../features/lora/" class="md-nav__link">
         
   
   
@@ -800,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/others/" class="md-nav__link">
+      <a href="../../features/others/" class="md-nav__link">
         
   
   
@@ -828,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/clock/" class="md-nav__link">
+      <a href="../../features/clock/" class="md-nav__link">
         
   
   
@@ -856,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/connect/" class="md-nav__link">
+      <a href="../../features/connect/" class="md-nav__link">
         
   
   
@@ -884,7 +817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/config/" class="md-nav__link">
+      <a href="../../features/config/" class="md-nav__link">
         
   
   
@@ -966,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="controlling-device/" class="md-nav__link">
+      <a href="../../controlling-device/" class="md-nav__link">
         
   
   
@@ -994,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="controlling-device/headless-mode/" class="md-nav__link">
+      <a href="../../controlling-device/headless-mode/" class="md-nav__link">
         
   
   
@@ -1022,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="controlling-device/keyboard-shortcuts/" class="md-nav__link">
+      <a href="../../controlling-device/keyboard-shortcuts/" class="md-nav__link">
         
   
   
@@ -1050,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="controlling-device/serial/" class="md-nav__link">
+      <a href="../../controlling-device/serial/" class="md-nav__link">
         
   
   
@@ -1078,7 +1011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="controlling-device/webui/" class="md-nav__link">
+      <a href="../../controlling-device/webui/" class="md-nav__link">
         
   
   
@@ -1110,18 +1043,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1142,7 +1077,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1157,10 +1092,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="configuration/bruce.conf/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    bruce.conf
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1176,6 +1138,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#default-bruceconf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default bruce.conf
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1242,7 +1235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="external-modules/cc1101/" class="md-nav__link">
+      <a href="../../external-modules/cc1101/" class="md-nav__link">
         
   
   
@@ -1324,7 +1317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="themes/" class="md-nav__link">
+      <a href="../../themes/" class="md-nav__link">
         
   
   
@@ -1352,7 +1345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="themes/create-theme/" class="md-nav__link">
+      <a href="../../themes/create-theme/" class="md-nav__link">
         
   
   
@@ -1434,7 +1427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="interpreter/" class="md-nav__link">
+      <a href="../../interpreter/" class="md-nav__link">
         
   
   
@@ -1462,7 +1455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="interpreter/legacy/" class="md-nav__link">
+      <a href="../../interpreter/legacy/" class="md-nav__link">
         
   
   
@@ -1490,7 +1483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="interpreter/typescript/" class="md-nav__link">
+      <a href="../../interpreter/typescript/" class="md-nav__link">
         
   
   
@@ -1572,7 +1565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="development/building-from-source/" class="md-nav__link">
+      <a href="../../development/building-from-source/" class="md-nav__link">
         
   
   
@@ -1600,7 +1593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="development/help-with-bruce-development/" class="md-nav__link">
+      <a href="../../development/help-with-bruce-development/" class="md-nav__link">
         
   
   
@@ -1628,7 +1621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="development/porting-to-devices/" class="md-nav__link">
+      <a href="../../development/porting-to-devices/" class="md-nav__link">
         
   
   
@@ -1683,21 +1676,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-bruce" class="md-nav__link">
+  <a href="#default-bruceconf" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What Is Bruce?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-bruce-for" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Is Bruce For?
+        Default bruce.conf
       
     </span>
   </a>
@@ -1722,6 +1704,46 @@
   
 
 
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
               
               <article class="md-content__inner md-typeset">
                 
@@ -1729,7 +1751,7 @@
 
 
   
-    <a href="https://github.com/BruceDevices/Wiki/blob/main/docs/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/BruceDevices/Wiki/blob/main/docs/configuration/bruce.conf.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1738,25 +1760,85 @@
     
       
     
-    <a href="https://github.com/BruceDevices/Wiki/raw/main/docs/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/BruceDevices/Wiki/raw/main/docs/configuration/bruce.conf.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="home">Home<a class="headerlink" href="#home" title="Permanent link">#</a></h1>
-<p><img alt="Bruce" src="img/bruce_banner.png" /></p>
-<p>Test</p>
-<ol>
-<li><a href="./#what-is-bruce">What Is Bruce?</a></li>
-<li><a href="./#what-is-bruce-for">What Is Bruce For?</a></li>
-<li><a href="faq/">FAQ</a></li>
-</ol>
-<h2 id="what-is-bruce">What Is Bruce?<a class="headerlink" href="#what-is-bruce" title="Permanent link">#</a></h2>
-<p>Bruce is meant to be a versatile ESP32 firmware that supports a ton of offensive features focusing to facilitate on Red Team operations. It also supports products from various manufacturers like M5Stack (Cardputer and Sticks) and Lilygo (T-Embed and T-LoRa Pager).</p>
-<h2 id="what-is-bruce-for">What Is Bruce For?<a class="headerlink" href="#what-is-bruce-for" title="Permanent link">#</a></h2>
-<p>Bruce stems from a keen observation within the community focused on devices like Flipper Zero. While these devices offered a glimpse into the world of offensive security, there was a palpable sense that something more could be achieved without being that overpriced, particularly with the robust and modular hardware ecosystem provided by M5Stack and Lilygo products.</p>
+<h1 id="bruceconf">bruce.conf<a class="headerlink" href="#bruceconf" title="Permanent link">#</a></h1>
+<p>This file is used to persist settings between boots and when swapping firmware on your device when using <a href="https://bmorcelli.github.io/Launcher/">Launcher</a> when you finish running other firmware.</p>
+<p>TODO: Don't store pwd in cleartext :P</p>
+<p>If there is no <code>bruce.conf</code> file on the LittleFS or SD card (if available) then one will be created.</p>
+<h2 id="default-bruceconf">Default bruce.conf<a class="headerlink" href="#default-bruceconf" title="Permanent link">#</a></h2>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;priColor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a80f&quot;</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;secColor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;880f&quot;</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;bgColor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;themeFile&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">&quot;themeOnSd&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">&quot;dimmerSet&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">&quot;bright&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">&quot;tmz&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;soundEnabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="nt">&quot;soundVolume&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="nt">&quot;wifiAtStartup&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="nt">&quot;instantBoot&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="nt">&quot;ledBright&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="nt">&quot;ledColor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;960064&quot;</span><span class="p">,</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">  </span><span class="nt">&quot;ledBlinkEnabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">  </span><span class="nt">&quot;ledEffect&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">  </span><span class="nt">&quot;ledEffectSpeed&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">  </span><span class="nt">&quot;ledEffectDirection&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">  </span><span class="nt">&quot;webUI&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="nt">&quot;pwd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bruce&quot;</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">  </span><span class="nt">&quot;webUISessions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">  </span><span class="nt">&quot;wifiAp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="nt">&quot;ssid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BruceNet&quot;</span><span class="p">,</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="nt">&quot;pwd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brucenet&quot;</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">  </span><span class="nt">&quot;wifiMAC&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">  </span><span class="nt">&quot;evilWifiNames&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">  </span><span class="nt">&quot;evilWifiEndpoints&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">    </span><span class="nt">&quot;getCredsEndpoint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/creds&quot;</span><span class="p">,</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="nt">&quot;setSsidEndpoint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/ssid&quot;</span><span class="p">,</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">    </span><span class="nt">&quot;showEndpoints&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">    </span><span class="nt">&quot;allowSetSsid&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">    </span><span class="nt">&quot;allowGetCreds&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">  </span><span class="nt">&quot;evilWifiPasswordMode&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">  </span><span class="nt">&quot;wifi&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">  </span><span class="nt">&quot;mifareKeys&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">  </span><span class="nt">&quot;startupApp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">  </span><span class="nt">&quot;wigleBasicToken&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">  </span><span class="nt">&quot;devMode&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">  </span><span class="nt">&quot;colorInverted&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">  </span><span class="nt">&quot;badUSBBLEKeyboardLayout&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="w">  </span><span class="nt">&quot;badUSBBLEKeyDelay&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">  </span><span class="nt">&quot;disabledMenus&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">  </span><span class="nt">&quot;qrCodes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="w">      </span><span class="nt">&quot;menuName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bruce AP&quot;</span><span class="p">,</span>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WIFI:T:WPA;S:BruceNet;P:brucenet;;&quot;</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="w">      </span><span class="nt">&quot;menuName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bruce Wiki&quot;</span><span class="p">,</span>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/pr3y/Bruce/wiki&quot;</span>
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="w">      </span><span class="nt">&quot;menuName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bruce Site&quot;</span><span class="p">,</span>
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://bruce.computer&quot;</span>
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="w">      </span><span class="nt">&quot;menuName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Rickroll&quot;</span><span class="p">,</span>
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a><span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://youtu.be/dQw4w9WgXcQ&quot;</span>
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="w">  </span><span class="p">]</span>
+</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a><span class="p">}</span>
+</span></code></pre></div>
 
 
 
@@ -1777,7 +1859,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 7, 2026 15:57:47 UTC">January 7, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 7, 2026 08:59:20 UTC">January 7, 2026</span>
   </span>
 
     
@@ -1824,10 +1906,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "content.code.select", "content.action.edit", "content.action.view", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "XXXnavigation.tabs", "XXXnavigation.sections", "XXXnavigation.expand", "navigation.path", "XXXnavigation.indexes"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.select", "content.action.edit", "content.action.view", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "XXXnavigation.tabs", "XXXnavigation.sections", "XXXnavigation.expand", "navigation.path", "XXXnavigation.indexes"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

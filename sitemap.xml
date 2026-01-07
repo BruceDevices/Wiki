@@ -2,94 +2,138 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wiki.bruce.computer/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/BLE/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/faq/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/Building-from-source/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/how-to-install/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/CC1101/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/configuration/bruce.conf/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/Develop-with-Bruce/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/controlling-device/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/FAQ/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/controlling-device/headless-mode/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/FM/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/controlling-device/keyboard-shortcuts/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/Files/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/controlling-device/serial/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/IR/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/controlling-device/webui/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/Installing/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/development/building-from-source/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/Interface/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/development/help-with-bruce-development/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/Interpreter/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/development/porting-to-devices/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/InterpreterLegacy/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/external-modules/cc1101/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/InterpreterTypescript/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/features/ble/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/Others/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/features/clock/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/RF/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/features/config/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/RFID/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/features/connect/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/Serial/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/features/ethernet/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/Wardriving/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/features/files/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/WiFi/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/features/fm/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/_Footer/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/features/gps/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/_Sidebar/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/features/ir/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/bruce.conf/</loc>
-         <lastmod>2025-12-26</lastmod>
+         <loc>https://wiki.bruce.computer/features/js-interpreter/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/features/lora/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/features/nrf24/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/features/others/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/features/rf/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/features/rfid/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/features/wifi/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/interpreter/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/interpreter/legacy/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/interpreter/typescript/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/themes/</loc>
+         <lastmod>2026-01-07</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/themes/create-theme/</loc>
+         <lastmod>2026-01-07</lastmod>
     </url>
 </urlset>
