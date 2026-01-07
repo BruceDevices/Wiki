@@ -21,7 +21,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Dark
-      media: "(prefers-color-scheme: light)"
+      media: "(prefers-color-scheme: dark)"
 
     # Dark mode (applies if OS prefers dark)
     - scheme: slate
