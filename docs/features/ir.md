@@ -61,7 +61,7 @@ https://github.com/Lucaslhm/Flipper-IRDB also has so many payloads you can use
 
 ### Methods for Transmitting `.ir` Files
 
-1. **Custom IR App**: Select commands individually from the "IR" menu.
-2. **SDCard/LittleFS File Manager**: Access under the "Others" menu (sends all commands).
-3. **WebUI**: Click the [antenna button](https://github.com/BruceDevices/firmware/pull/124) next to the file (sends all commands).
-4. **Serial Command**: For example, use `ir tx_from_file AC_LG_SX122CL_off.ir`. For further details, refer to the [Serial Command Guide](../controlling-device/serial.md) (sends all commands).
+1. **Custom IR App** Select commands individually from the **IR** menu
+2. **SDCard/LittleFS File Manager** Access under the **Files** menu (sends all commands)
+3. **[WebUI](../controlling-device/webui.md#features)** by clicking the :material-play: icon (sends all commands)
+4. **Serial Command** For example, use `ir tx_from_file AC_LG_SX122CL_off.ir` for further details, refer to the [Serial Command Guide](../controlling-device/serial.md) (sends all commands)
