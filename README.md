@@ -63,3 +63,7 @@ To generate the site into a site/ folder run:
 ```
 mkdocs build
 ```
+
+## Social Cards
+
+You will need to install Cairo Graphics which you can read about [here]([git rebase --abort](https://squidfunk.github.io/mkdocs-material/plugins/requirements/image-processing/#cairo-graphics))
