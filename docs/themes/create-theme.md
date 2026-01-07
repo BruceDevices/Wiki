@@ -6,11 +6,13 @@ Bruce accepts **.bmp** **.jpg** **.gif** and **.png** (not available on LITE_VER
 
 The recommended height of the images is:
 
-| Device | Display size | Height |
+| Device | Display Size | Height |
 | --- | --- | --- |
-| T-Embed | 320x170 | 140px |
-| Cardputer StickCPlus | 240x135 | 105px |
-| Core / CYD | 320x240 | 180 |
+| Cardputer and StickCPlus | 240x135 | 105px |
+| Lilygo T-Embed | 320x170 | 140px |
+| Core / CYD | 320x240 | 180px |
+| Lilygo T-LoRa Pager | 480×222 | 192px |
+| Custom | Any | 30px less than screen height |
 
 
 ## Theme File
