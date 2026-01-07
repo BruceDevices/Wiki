@@ -10,7 +10,7 @@ Test
 
 ## What Is Bruce?
 
-Bruce is meant to be a versatile ESP32 firmware that supports a ton of offensive features focusing to facilitate on Red Team operations. It also supports products from various manufacturers like M5Stack (Cardputer and Sticks) and Lilygo (T-Embed and T-LoRa Pager).
+Bruce is a versatile ESP32 firmware that supports a ton of offensive features focusing to facilitate on Red Team operations. It also supports products from various manufacturers like M5Stack (Cardputer and Sticks) and Lilygo (T-Embed and T-LoRa Pager).
 
 ## What Is Bruce For?
 
