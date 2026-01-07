@@ -1,6 +1,6 @@
 ---
 tags:
- -  _TODO
+  - _TODO
 todo: Formatting
       Needs updating with all recent JS changes by Matt (@emericklaw)
       Possible changes with the upcomming migration away from Duktape

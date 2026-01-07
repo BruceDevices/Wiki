@@ -1,6 +1,6 @@
 ---
 tags:
- -  _TODO
+  - _TODO
 todo: Document other device navigation methods
       Explain more about the interface
 ---

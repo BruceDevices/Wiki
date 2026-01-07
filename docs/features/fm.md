@@ -1,6 +1,6 @@
 ---
 tags:
- -  _TODO
+  - _TODO
 todo: Check 'work in progress' sections
       Test with module and check documentation matches real world
 ---

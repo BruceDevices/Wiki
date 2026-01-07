@@ -1,6 +1,6 @@
 ---
 tags:
- -  _TODO
+  - _TODO
 todo: Formatting
       Go through each menu item and add documentation
 ---

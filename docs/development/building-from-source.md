@@ -1,6 +1,6 @@
 ---
 tags:
- -  _TODO
+  - _TODO
 todo: All build instructions need checking
 ---
 # Building From Source

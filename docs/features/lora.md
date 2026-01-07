@@ -1,6 +1,6 @@
 ---
 tags:
- -  _TODO
+  - _TODO
 todo: Properly document each menu feature
 ---
 # LoRa

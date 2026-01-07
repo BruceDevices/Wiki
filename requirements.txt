@@ -2,3 +2,4 @@ mkdocs
 mkdocs-material
 mkdocs-git-revision-date-localized-plugin
 mkdocs-awesome-pages-plugin
+mkdocs-material[imaging]

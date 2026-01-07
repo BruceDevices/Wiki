@@ -1,6 +1,6 @@
 ---
 tags:
- -  _TODO
+  - _TODO
 todo: More documentation on BadUSB
       Needs updating when Matt (@emericklaw) publishes the BadUSB update
 ---
