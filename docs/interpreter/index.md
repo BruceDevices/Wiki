@@ -3134,7 +3134,7 @@ console.log(response.body);
 ```
 
 <!-- index-start -->
-## wifi functions
+## WiFi functions
 
 - [wifi.connected()](#wificonnected)
 - [wifi.connect()](#wificonnect)

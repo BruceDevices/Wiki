@@ -36,7 +36,7 @@ You can Wardrive using Bruce if you have a GPS module connected to your device.I
 4. Select the "WiGLE Upload" option.
 5. Select your WiFi network
 6. Wait for the file to be sent. A loading bar should appear with information at the end saying that the file has been uploaded
-7. Shark, you have already collaborated, whenever you find new wifi networks in wardriving, just upload the file
+7. Shark, you have already collaborated, whenever you find new WiFi networks in wardriving, just upload the file
 
 
 #### Via WiGLE Website

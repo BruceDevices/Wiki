@@ -22,7 +22,7 @@ API Reference for Native Functions Accessible from JS:
 
  - [General](#general)
  - [Board info](#get-some-board-information)
- - [Wifi](#wifi-functions)
+ - [WiFi](#wifi-functions)
  - [TFT Display](#tft-display-functions)
  - [Keyboard](#keyboard-inputs)
  - [Storage](#storage-functions)
@@ -135,7 +135,7 @@ API Reference for Native Functions Accessible from JS:
 ### `wifiConnect(ssid : string, timeout_in_seconds : number)`
 ### `wifiConnect(ssid : string, timeout_in_seconds : number, pwd : string)`
 
-**Description**: Connects to the specified wifi network (without opening any menu).
+**Description**: Connects to the specified WiFi network (without opening any menu).
 
 **Parameters**:
 - `ssid` (string): Network name.
@@ -147,13 +147,13 @@ API Reference for Native Functions Accessible from JS:
 ---
 ### `wifiDisconnect()`
 
-**Description**: Disconnect Wifi.
+**Description**: Disconnect WiFi.
 
 ---
 
 ### `wifiScan()`
 
-**Description**: scan for available wifi networks. Also disconnect from current wifi network to perform the scan.
+**Description**: scan for available WiFi networks. Also disconnect from current WiFi network to perform the scan.
 
 **Returns**: `object`: An object array with 3 properties:
   - `SSID` (string): The network name.
