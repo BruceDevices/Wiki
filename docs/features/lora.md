@@ -18,5 +18,5 @@ Simple chat function between Bruce LoRa enabled devices.
 
 ## Supported Modules
 
- * SX1276
- * SX1262
+* SX1276
+* SX1262

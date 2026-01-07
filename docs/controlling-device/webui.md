@@ -4,8 +4,8 @@
 
 To use the WebUI you first need to start it.
 
- * On the main menu goto Files -> WebUI
- * Choose either
+* On the main menu goto Files -> WebUI
+* Choose either
     * My Network - uses the current WiFi network or prompt to connect to one
     * AP Mode - the device creates its own WiFi network than you can connect to
 

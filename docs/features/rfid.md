@@ -32,18 +32,18 @@ Clonable RFID tags pose a security risk, as cloning involves creating a duplicat
 
 ## Common Types of RFID and NFC Tags
 
- * **MIFARE Classic 1k/4k** Operates at 13.56MHz and offers 1KB or 4KB of memory storage. Commonly used in access control systems, transportation, and loyalty programs. You can find clonable versions of these tags [here](https://pt.aliexpress.com/item/1005006787338686.html).
- * **NTAG Series** Popular NFC tag types, such as NTAG213 and NTAG215, operate at 13.56MHz and are known for their compatibility with a wide range of NFC-enabled devices and applications. These tags support NDEF records that can be interpreted by smartphones.
- * **EM4100 and T5557** RFID protocols operating at 125kHz, commonly used for low-frequency access control systems, identification badges, key fobs, asset tracking, and other proximity-based identification applications.
+* **MIFARE Classic 1k/4k** Operates at 13.56MHz and offers 1KB or 4KB of memory storage. Commonly used in access control systems, transportation, and loyalty programs. You can find clonable versions of these tags [here](https://pt.aliexpress.com/item/1005006787338686.html).
+* **NTAG Series** Popular NFC tag types, such as NTAG213 and NTAG215, operate at 13.56MHz and are known for their compatibility with a wide range of NFC-enabled devices and applications. These tags support NDEF records that can be interpreted by smartphones.
+* **EM4100 and T5557** RFID protocols operating at 125kHz, commonly used for low-frequency access control systems, identification badges, key fobs, asset tracking, and other proximity-based identification applications.
 
 ## Supported Modules
 
- * **RFID 13.56MHz**
+* **RFID 13.56MHz**
     * **M5Stack [RFID2](https://docs.M5Stack.com/en/unit/rfid2) module**
     * **MFRC-522** - via [I2C](https://github.com/BruceDevices/firmware/blob/main/media/connections/rc522_stick.jpg) (Select `M5 RFID2` in the config menu)
     * **PN532** - via [I2C](https://github.com/BruceDevices/firmware/blob/main/media/connections/pn532_i2c.jpg), [SPI](https://github.com/BruceDevices/firmware/blob/main/media/connections/pn532_spi.jpg), or [BLE](https://why.yuyeye.cc/post-images/1568433091524.jpg)
   
- * **RFID 125kHz**
+* **RFID 125kHz**
     * **RDM6300** ([Connection Schema](https://github.com/BruceDevices/firmware/pull/182#issuecomment-2287692412))
 
 ## Features

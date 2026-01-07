@@ -58,9 +58,9 @@ Spams a list of SSIDs writen in a **.txt** file.
 
 There must be:
 
- * One SSID per line 
- * Up to 32 characters per SSID
- * as many SSID you want
+* One SSID per line 
+* Up to 32 characters per SSID
+* as many SSID you want
 
 ```txt
 My SSID
@@ -134,8 +134,8 @@ By including a specific tag in the first line of your HTML file, Bruce will auto
 
 #### Notes
 
- * Ensure the `<!-- AP="..." -->` tag is in the **very first line** of the file. 
- * The feature does not affect the functionality of other HTML content
+* Ensure the `<!-- AP="..." -->` tag is in the **very first line** of the file. 
+* The feature does not affect the functionality of other HTML content
 
 
 ## Listen TCP

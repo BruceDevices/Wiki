@@ -11,21 +11,21 @@ Most of these commands are compatible with the [Flipper Zero CLI](https://docs.f
 
 ## How to Send Commands
 
- * Via Web Terminal
+* Via Web Terminal
     * [Spacehunh Serial Terminal](https://terminal.spacehuhn.com/)
     * [ESPConnect](https://thelastoutpostworkshop.github.io/ESPConnect/)
- * Via the [Arduino IDE Serial Monitor](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor/), [Putty](https://pbxbook.com/voip/sputty.html), or any other serial terminal app
- * Via the terminal/a bash script: `echo "say My name is Bruce" | busybox microcom -s 115200 /dev/ttyACM0  -t 1000`
- * Via a [python script](https://github.com/wh00hw/pyFlipper)
- * From a smartphone using [SerialManager](https://github.com/delletenebre/SerialManager2) or [Serial USB Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_usb_terminal)
- * Via the [WebUI](webui.md#serial-commands)
+* Via the [Arduino IDE Serial Monitor](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor/), [Putty](https://pbxbook.com/voip/sputty.html), or any other serial terminal app
+* Via the terminal/a bash script: `echo "say My name is Bruce" | busybox microcom -s 115200 /dev/ttyACM0  -t 1000`
+* Via a [python script](https://github.com/wh00hw/pyFlipper)
+* From a smartphone using [SerialManager](https://github.com/delletenebre/SerialManager2) or [Serial USB Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_usb_terminal)
+* Via the [WebUI](webui.md#serial-commands)
      * By using the `Serial Cmd` button
      * Using curl or similar `curl -XPOST "http://bruce.local/cm" -d "cmnd=say My name is Bruce"`
 
 Serial connection settings:
 
- * Speed: 115200
- * 8 data bits, 1 stop bit, no parity, no Flow Control
+* Speed: 115200
+* 8 data bits, 1 stop bit, no parity, no Flow Control
 
 
 ## Reference
