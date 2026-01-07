@@ -85,6 +85,13 @@ Once in the editor you can use a lot of the common text editing shortcuts availa
 * **TAB/SHIFT+TAB**  Increases/decreases intending
 
 
+### Serial Commands
+
+Using the `Serial Cmd` button on the top menu commands can be sent to the device.
+
+More information on the serial commands can be found [here](serial.md).
+
+
 ### Settings
 
 ![Settings](webui-settings.png)
