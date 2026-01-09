@@ -15,23 +15,21 @@ extra_css:
 theme:
   name: material
   palette:
-    # Light mode (applies if OS prefers light)
-    - scheme: default
-      primary: bruce
-      accent: bruce
-      toggle:
-        icon: material/weather-night
-        name: Dark
-      media: "(prefers-color-scheme: dark)"
-
-    # Dark mode (applies if OS prefers dark)
+    # Dark mode (default)
     - scheme: slate
       primary: bruce
       accent: bruce
       toggle:
         icon: material/weather-sunny
         name: Light
-      media: "(prefers-color-scheme: dark)"
+
+    # Light mode
+    - scheme: default
+      primary: bruce
+      accent: bruce
+      toggle:
+        icon: material/weather-night
+        name: Dark
 
   logo: img/logo.png
   favicon: img/logo.png
