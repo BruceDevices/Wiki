@@ -31,8 +31,8 @@ theme:
         icon: material/weather-night
         name: Dark
 
-  logo: img/logo.png
-  favicon: img/logo.png
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
   features:
     - content.code.copy
     - content.code.select
