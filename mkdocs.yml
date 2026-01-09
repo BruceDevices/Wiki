@@ -10,7 +10,7 @@ site_dir: site
 use_directory_urls: true
 
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 
 theme:
   name: material
