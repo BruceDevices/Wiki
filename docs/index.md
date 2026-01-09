@@ -1,12 +1,12 @@
 # Home
 
-![Bruce](img/bruce_banner.png)
+![Bruce](assets/images/bruce_banner.png)
 
-Test
+---
 
-1. [What Is Bruce?](index.md#what-is-bruce)
-2. [What Is Bruce For?](index.md#what-is-bruce-for)
-3. [FAQ](faq.md)
+* [What Is Bruce?](index.md#what-is-bruce)
+* [What Is Bruce For?](index.md#what-is-bruce-for)
+* [FAQ](faq.md)
 
 ## What Is Bruce?
 
