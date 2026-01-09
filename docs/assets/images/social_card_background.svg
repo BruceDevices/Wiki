@@ -1,0 +1,22 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <!-- Gradient Background -->
+  <radialGradient spreadMethod="pad" r="0.69925" cy="50%" cx="50%" id="svg_20">
+   <stop stop-opacity="0.98438" stop-color="#6608c1" offset="0.4375"/>
+   <stop stop-color="#943ee5" offset="0.69141" stop-opacity="0.99219"/>
+  </radialGradient>
+ </defs>
+ <!-- Rings -->
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_6" height="630" width="1200" y="0" x="0" fill="#943EE5"/>
+  <g id="svg_8">
+   <ellipse ry="500" rx="500" id="svg_7" cy="202" cx="989" fill="url(#svg_20)"/>
+   <g id="svg_2" opacity="0.25" stroke-width="4" stroke="#c77dff" fill="none">
+    <circle id="svg_4" r="150.83333" cy="200.50554" cx="988.4889"/>
+    <circle id="svg_5" r="211.16663" cy="200.50554" cx="988.4889"/>
+    <circle id="svg_3" r="271.5" cy="199.49999" cx="990.50001"/>
+   </g>
+  </g>
+ </g>
+</svg>
