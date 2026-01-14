@@ -1631,17 +1631,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#github-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GitHub Actions
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1801,17 +1790,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#github-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GitHub Actions
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1905,7 +1883,7 @@
 <h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">#</a></h3>
 <p>Requirements</p>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3-pip<span class="w"> </span>git
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>--no-install-recommends<span class="w"> </span>python3-pip<span class="w"> </span>git<span class="w"> </span>gcc-multilib<span class="w"> </span>libc6-dev-i386
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>pip3<span class="w"> </span>install<span class="w"> </span>platformio
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:~/.local/bin
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">source</span><span class="w"> </span>~/.bashrc
@@ -1930,18 +1908,27 @@
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>pio<span class="w"> </span>run<span class="w"> </span>-e<span class="w"> </span>m5stack-cplus1_1<span class="w"> </span>-t<span class="w"> </span>build-firmware
 </span></code></pre></div>
 <h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">#</a></h3>
+<h1 id="windows-build">Windows build<a class="headerlink" href="#windows-build" title="Permanent link">#</a></h1>
 <ul>
 <li>Install <a href="https://git-scm.com/download/win">Git</a></li>
 <li>Install Python using the Microsoft Store</li>
 <li>Install VSCode</li>
-<li>Download or Git clone the repository</li>
-<li>Within VSCode, <code>File -&gt; Open Folder...</code> and select the folder you just extracted/cloned</li>
-<li>If it doesn't prompt to install PlatformIO, click on "Extentions" (4 swares icon on the left) and install PlatformIO (and restart VSCode)</li>
+<li>Install MSYS2 https://www.msys2.org/ at default path</li>
+<li>Open C:\msys64\ucrt64.exe</li>
+<li>Run on UCRT64 terminal: <code>pacman -S --needed mingw-w64-i686-toolchain</code></li>
+<li>Add C:\msys64\mingw32\bin to PATH, cmd: <code>setx PATH "%PATH%;C:\msys64\mingw32\bin"</code></li>
+<li>Download the repository and extract it somewhere you want</li>
+<li>Within VSCode, <code>File&gt;Open Folder...</code> and select the folder of the firmware</li>
+<li>If it doesn't prompt to install Platformio, click on "Extentions" (4 swares icon on the left) and install Platformio (and restart VsCode)</li>
 <li>In the Status bar (down on the screen) click where is written <code>Default (Bruce-main)</code></li>
-<li>A menu will appear in the Search bar (up on screen), select your device "env"</li>
+<li>A little Menu will appear in the Search bar (up on screen), select your device "env"</li>
 <li>Now click in the <img alt="✔" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2714.svg" title=":heavy_check_mark:" /> Icon in the Status Bar (beside the cute little House), it will start building your project</li>
-<li>If you want to upload directly, you can do it clicking in the "-&gt;" arrow to upload to your device</li>
+<li>if you want to upload directly, you can do it clicking in the "-&gt;" arrow to upload to your device</li>
 <li>If you want to output a binary you can flash, use the "build-firmware" Custom task in the PlatformIO Extension Sidebar Menu named "project tasks"</li>
+</ul>
+<h3 id="on-mac">On MAC<a class="headerlink" href="#on-mac" title="Permanent link">#</a></h3>
+<ul>
+<li>run on terminal: <code>xcode-select --install</code></li>
 </ul>
 <h2 id="github-actions">GitHub Actions<a class="headerlink" href="#github-actions" title="Permanent link">#</a></h2>
 <p>You can use the Github workflow to build the binaries for you with Actions, the last releases are available in the Artifacts, but you can fork the project and make the changes you want to this, then build on your using your own Actions.</p>
@@ -1965,7 +1952,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 7, 2026 18:18:43 UTC">January 7, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 14, 2026 20:37:32 UTC">January 14, 2026</span>
   </span>
 
     
