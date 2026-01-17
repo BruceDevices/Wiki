@@ -68,6 +68,8 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - pymdownx.details
+  - md_in_html
+  - pymdownx.blocks.caption
 
 plugins:
   - search
@@ -84,3 +86,4 @@ plugins:
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
   - awesome-pages
+  - glightbox
