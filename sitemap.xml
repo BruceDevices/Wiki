@@ -2,138 +2,138 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wiki.bruce.computer/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/faq/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/how-to-install/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/configuration/bruce.conf/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/controlling-device/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/controlling-device/headless-mode/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/controlling-device/keyboard-shortcuts/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/controlling-device/serial/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/controlling-device/webui/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/development/building-from-source/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/development/help-with-bruce-development/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/development/porting-to-devices/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/external-modules/cc1101/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/ble/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/clock/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/config/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/connect/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/ethernet/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/files/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/fm/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/gps/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/ir/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/js-interpreter/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/lora/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/nrf24/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/others/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/rf/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/rfid/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/features/wifi/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/interpreter/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/interpreter/legacy/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/interpreter/typescript/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/themes/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
     <url>
          <loc>https://wiki.bruce.computer/themes/create-theme/</loc>
-         <lastmod>2026-01-14</lastmod>
+         <lastmod>2026-01-18</lastmod>
     </url>
 </urlset>
