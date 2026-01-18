@@ -1,6 +1,6 @@
 site_name: Bruce Wiki
 site_url: https://wiki.bruce.computer
-site_description: Complete documentation for Bruce - a versatile ESP32 firmware for red team operations, featuring WiFi attacks, RF analysis, RFID tools, and more on M5Stack, Lilygo and many other devices.
+site_description: Documentation for Bruce - a versatile ESP32 firmware for red team operations, featuring WiFi attacks, RF analysis, RFID tools, and more on M5Stack, Lilygo and many other devices.
 repo_url: https://github.com/BruceDevices/firmware
 repo_name: GitHub
 edit_uri: https://github.com/BruceDevices/Wiki/blob/main/docs/
@@ -10,31 +10,29 @@ site_dir: site
 use_directory_urls: true
 
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 
 theme:
   name: material
   palette:
-    # Light mode (applies if OS prefers light)
-    - scheme: default
-      primary: bruce
-      accent: bruce
-      toggle:
-        icon: material/weather-night
-        name: Dark
-      media: "(prefers-color-scheme: dark)"
-
-    # Dark mode (applies if OS prefers dark)
+    # Dark mode (default)
     - scheme: slate
       primary: bruce
       accent: bruce
       toggle:
         icon: material/weather-sunny
         name: Light
-      media: "(prefers-color-scheme: dark)"
 
-  logo: img/logo.png
-  favicon: img/logo.png
+    # Light mode
+    - scheme: default
+      primary: bruce
+      accent: bruce
+      toggle:
+        icon: material/weather-night
+        name: Dark
+
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
   features:
     - content.code.copy
     - content.code.select
@@ -74,8 +72,9 @@ plugins:
   - search
   - social:
       enabled: !ENV [CI, false]
-      cards_layout_options:
-        background_color: "rgb(148, 62, 229)"    
+      cards_layout_dir: layouts
+      cards_layout: bruce
+      debug: false
   # - tags:
   #     shadow_tags_suffix: Internal
   #     shadow: false
