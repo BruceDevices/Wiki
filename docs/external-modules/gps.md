@@ -3,11 +3,16 @@ title: GPS
 ---
 # GPS
 
-Below is wiring information for popular devices and GPS modules.
+Add GPS support to a device. This can be used for [Wardriving](../features/gps.md#wardriving) and [GPS Tracking](../features/gps.md#gps-tracker).
+
 
 ## Configuration
 
-You may need to change the [Baudrate](#baud-rate) and [GPS Pins](#gps-pins) configuration.
+You may need to change the [Baudrate](#baud-rate) and [GPS Pins](#gps-pins) configuration depending on the GPS module and device you are using.
+
+!!! info
+    Since the GPS modules use UART/serial you need to ensure you swap the TX/RX pins when making the connections.
+    `TX -> RX` and `RX -> TX`
 
 ### Baud Rate
 
@@ -52,43 +57,21 @@ You can set the RX and TX pins away from their defaults if required.
 
 **Default Baud Rate:** 9600
 
-![M5Stack GPS Module](gps-m5stack-gps.png){ width="200" }
+![M5Stack GPS Module](../external-modules/gps-m5stack-gps.png){ width="200" }
 
 
-## Devices
+## Devices/Wiring Diagrams
 
-### M5Stack StickC
-
-**Default Pins:** RX=33 TX=32
-
-![M5Stack StickC](gps-m5stack-stick.jpg){ width="300" }
+### [M5Stack StickC - GPS](../wiring-diagrams/m5stickc/gps.md)
 
 
-### Cardputer
-
-**Default Pins:** RX=1 TX=2
-
-![Cardputer](gps-cardputer.jpg){ width="300" }
+### [M5Stack Cardputer - GPS](../wiring-diagrams/cardputer/gps.md)
 
 
-#### Cardputer Adv
-
-**Default Pins:** RX=15 TX=13
-
-![Cardputer](gps-cardputer-adv.jpg){ width="300" }
-
-**Alternative Pins:** RX=33 TX=32 follow wiring shown [here](#cardputer)
+### [M5Stack Cardputer Adv - GPS](../wiring-diagrams/cardputer/gps.md)
 
 
-### Lilygo T-Embed CC1101
-
-**Default Pins:** RX=44 TX=43
-
-![CYD](gps-tembed.jpg){ width="300" }
+### [Lilygo T-Embed CC1101 - GPS](../wiring-diagrams/t-embed/gps.md)
 
 
-### CYD
-
-**Default Pins:** RX=22 TX=27
-
-![CYD](gps-cyd.jpg){ width="300" }
+### [CYD - GPS](../wiring-diagrams/cyd/gps.md)

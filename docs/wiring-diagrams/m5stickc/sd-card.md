@@ -5,11 +5,7 @@ title: SD Card
 
 ## Items Needed
 
-### SD Card Module
-
-[Find on AliExpress](https://www.aliexpress.com/w/wholesale-SD-Card-Module.html)
-
-![CC1101](../sd-card-module.png){ width="200" }
+* [SD Card Module](../../external-modules/sd-card-module.md#modules)
 
 
 ## Wiring Diagram
