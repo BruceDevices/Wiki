@@ -32,27 +32,27 @@ You can set the RX and TX pins away from their defaults if required.
 
 **Default Baud Rate:** 9600
 
-[Find on AliExpress](https://www.aliexpress.com/item/1005006495478139.html)
+[Find on AliExpress](https://www.aliexpress.com/w/wholesale-NEO-6M.html)
 
-![NEO-6M](gps-neo6m.jpg){ width="300" }
+![NEO-6M](gps-neo6m.png){ width="200" }
 
 
 ### ATGM336H
 
-[Find on AliExpress](https://www.aliexpress.com/item/1005002106176312.html)
+[Find on AliExpress](https://www.aliexpress.com/w/wholesale-ATGM336H.html)
 
 **Default Baud Rate:** 9600
 
-![ATGM336H](gps-atgm336h.jpg){ width="300" }
+![ATGM336H](gps-atgm336h.png){ width="200" }
 
 
 ### M5Stack GPS Module
 
-[M5Stack Store](https://shop.m5stack.com/products/gps-bds-unit-v1-1-at6668)
+[Find on M5Stack Store](https://shop.m5stack.com/products/gps-bds-unit-v1-1-at6668)
 
 **Default Baud Rate:** 9600
 
-![M5Stack GPS Module](gps-m5stack-gps.jpg){ width="300" }
+![M5Stack GPS Module](gps-m5stack-gps.png){ width="200" }
 
 
 ## Devices
