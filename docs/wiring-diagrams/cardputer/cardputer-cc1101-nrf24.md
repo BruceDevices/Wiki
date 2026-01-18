@@ -1,0 +1,33 @@
+---
+title: CC1101/NRF24
+---
+# Cardputer - CC1101/NRF24
+
+## Items Needed
+
+### Micro SD Sniffer
+
+[Find on AliExpress](https://www.aliexpress.com/w/wholesale-Micro-SD-Sniffer.html)
+
+![Micro SD Sniffer](../micro-sd-sniffer.png){ width="200" }
+
+
+### CC1101
+
+[Find on AliExpress](https://www.aliexpress.com/w/wholesale-CC1101.html)
+
+![CC1101](../cc1101.png){ width="200" }
+
+
+### NRF24
+
+[Find on AliExpress](https://www.aliexpress.com/w/wholesale-NRF24.html)
+
+![NRF24](../nrf24.png){ width="200" }
+
+
+## Wiring Diagram
+
+The diagram shows a CC1101, the wiring is the same for an NRF24.
+
+![Cardputer - CC1101](cardputer-cc1101.png){ width="400" }

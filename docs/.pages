@@ -6,6 +6,7 @@ arrange:
   - controlling-device
   - configuration
   - external-modules
-  - themes
+  - wiring-diagrams
+  - customize-ui
   - interpreter
   - development

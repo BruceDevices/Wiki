@@ -7,6 +7,29 @@ todo: Document other device navigation methods
 
 # User Interface
 
+
+## Main Menu
+
+![Main Menu](main-menu.png)
+
+At the top is the status bar.
+
+This shows (from left to right):
+
+* The time (if available)
+* WireGuard connected/disconnected
+* GPS active
+* Bluetooth connected
+* WebUI active
+* WiFi connected
+* SD card mounted
+* Battery level %, indicator bar and green border charging indication (if available)
+
+The lower part of the screen will show the main user interface.
+
+
+## Navigation
+
 Depending on your device the way you interact with Bruce may differ.
 
 The common methods include:
@@ -25,16 +48,3 @@ The common methods include:
     * Enter - enter/select
     * Esc - back
     * [Keyboard Shortcuts](keyboard-shortcuts.md)
-
-
-## Main Menu
-
-![Main Menu](main-menu.png)
-
-At the top is the status bar.
-
-This shows:
-
-* The time (if available)
-* Various status icons
-* Battery level and charging indication (if available)
