@@ -1,8 +1,5 @@
 ---
-name: GPS
-tags:
-  - _TODO
-todo: Check documentaion works in real world
+title: GPS
 ---
 # GPS
 
@@ -35,14 +32,14 @@ You can set the RX and TX pins away from their defaults if required.
 
 **Default Baud Rate:** 9600
 
-[AliExpress Listing](https://www.aliexpress.com/item/1005006495478139.html)
+[Find on AliExpress](https://www.aliexpress.com/item/1005006495478139.html)
 
 ![NEO-6M](gps-neo6m.jpg){ width="300" }
 
 
 ### ATGM336H
 
-[AliExpress Listing](https://www.aliexpress.com/item/1005002106176312.html)
+[Find on AliExpress](https://www.aliexpress.com/item/1005002106176312.html)
 
 **Default Baud Rate:** 9600
 
