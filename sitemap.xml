@@ -17,10 +17,6 @@
          <lastmod>2026-01-18</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/controlling-device/</loc>
-         <lastmod>2026-01-18</lastmod>
-    </url>
-    <url>
          <loc>https://wiki.bruce.computer/controlling-device/headless-mode/</loc>
          <lastmod>2026-01-18</lastmod>
     </url>
@@ -33,7 +29,19 @@
          <lastmod>2026-01-18</lastmod>
     </url>
     <url>
+         <loc>https://wiki.bruce.computer/controlling-device/user-interface/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
          <loc>https://wiki.bruce.computer/controlling-device/webui/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/customize-ui/create-theme/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/customize-ui/themes/</loc>
          <lastmod>2026-01-18</lastmod>
     </url>
     <url>
@@ -50,6 +58,26 @@
     </url>
     <url>
          <loc>https://wiki.bruce.computer/external-modules/cc1101/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/external-modules/ch9329/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/external-modules/gps/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/external-modules/micro-sd-sniffer/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/external-modules/nrf24/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/external-modules/sd-card-module/</loc>
          <lastmod>2026-01-18</lastmod>
     </url>
     <url>
@@ -129,11 +157,43 @@
          <lastmod>2026-01-18</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/themes/</loc>
+         <loc>https://wiki.bruce.computer/wiring-diagrams/cardputer/cc1101-nrf24/</loc>
          <lastmod>2026-01-18</lastmod>
     </url>
     <url>
-         <loc>https://wiki.bruce.computer/themes/create-theme/</loc>
+         <loc>https://wiki.bruce.computer/wiring-diagrams/cardputer/gps/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/wiring-diagrams/cyd/gps/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/wiring-diagrams/esp32-s3/diy-smoochiee-board/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/wiring-diagrams/m5stickc/cc1101-nrf24/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/wiring-diagrams/m5stickc/ch9329/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/wiring-diagrams/m5stickc/gps/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/wiring-diagrams/m5stickc/sd-card-and-cc1101-nrf24/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/wiring-diagrams/m5stickc/sd-card/</loc>
+         <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.bruce.computer/wiring-diagrams/t-embed/gps/</loc>
          <lastmod>2026-01-18</lastmod>
     </url>
 </urlset>
