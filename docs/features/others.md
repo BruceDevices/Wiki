@@ -56,9 +56,7 @@ For more info on creating your own DuckyScripts [read here](https://docs.hak5.or
 
 ### Using BadUSB on StickCs and Core/Core2 Devices
 
-You will need to use a CH9329 module like as [this](https://pt.aliexpress.com/item/1005006680094576.html) or [this](https://pt.aliexpress.com/item/1005007031564072.html) to run the BadUSB on your device, wiring it into the Grove connector like this:
-
-![CH3929](others-badusb-ch3929.png)
+See more information here [M5StickC - CH9329](../wiring-diagrams/m5stickc/m5stickc-ch9329.png)
 
 
 ## USB Keyboard

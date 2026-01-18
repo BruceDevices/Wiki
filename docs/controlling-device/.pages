@@ -1,1 +1,5 @@
 title: Controlling Device
+arrange:
+  - user-interface.md
+  - webui.md
+  - serial.md
