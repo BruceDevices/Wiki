@@ -49,4 +49,6 @@ title: SD Card and CC1101/NRF24
 
 The diagram shows a CC1101, the wiring is the same for an NRF24.
 
+[View on Cirkit Designer](https://app.cirkitdesigner.com/project/b5f4d910-647c-4dd4-b1b1-efeff06263fa)
+
 ![M5StickC - SD Card and CC1101](m5stickc-sd-card-and-cc1101.png){ width="400" }
