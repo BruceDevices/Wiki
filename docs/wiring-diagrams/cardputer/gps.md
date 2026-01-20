@@ -22,7 +22,7 @@ More information GPS modules can be found [here](../../external-modules/gps.md).
 
 ## Items Needed
 
-* [GPS Modules](../../external-modules/gps.md#modules)
+* [GPS Module](../../external-modules/gps.md#modules)
 
 
 ## Wiring Diagram
