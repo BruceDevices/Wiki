@@ -86,10 +86,11 @@ layers:
     offset: { x: 50, y: 140 }
     typography:
       content: *page_title
-      align: start
+      overflow: shrink
+      align: start center
       color: "#ffffff"
       line:
-        amount: 3
+        amount: 4
         height: 1
       font:
         family: "Roboto"
