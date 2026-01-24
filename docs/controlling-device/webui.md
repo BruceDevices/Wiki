@@ -11,6 +11,12 @@ To use the WebUI you first need to start it.
 
 Once you have connected your device to your WiFi or connected to the devices AP you can connect to the WebUI.
 
+### Default Credentials
+
+**Username:** admin
+
+**Password:** bruce
+
 ![WebUI](webui.png)
 
 
