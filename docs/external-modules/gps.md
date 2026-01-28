@@ -68,7 +68,7 @@ You can set the RX and TX pins away from their defaults if required.
 ### [M5Stack Cardputer - GPS](../wiring-diagrams/cardputer/gps.md)
 
 
-### [M5Stack Cardputer Adv - GPS](../wiring-diagrams/cardputer/gps.md)
+### [M5Stack Cardputer Adv - GPS](../wiring-diagrams/cardputer-adv/gps.md)
 
 
 ### [Lilygo T-Embed CC1101 - GPS](../wiring-diagrams/t-embed/gps.md)
