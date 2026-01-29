@@ -14,6 +14,16 @@ More information GPS modules can be found [here](../../external-modules/gps.md).
 * [GPS Module](../../external-modules/gps.md#modules)
 
 
+## Pins
+
+| GPS | M5StickC |
+| -: | - |
+| VCC/5V - 1 | 5V |
+| RX - 2 | G32 |
+| TX - 3 | G33 |
+| GND - 4 | GND |
+
+
 ## Wiring Diagram
 
 [View on Cirkit Designer](https://app.cirkitdesigner.com/project/02059b54-0813-4747-a074-ce20b39c8701)

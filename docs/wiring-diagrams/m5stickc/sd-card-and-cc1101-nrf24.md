@@ -14,13 +14,41 @@ title: SD Card and CC1101/NRF24
 * [NRF24](../../external-modules/nrf24.md#modules)
 
 
+## Pins
+
+!!! info
+    Please check the wiring diagram below for full details of connections
+
+
+| CC1101/NRF | M5StickC |
+| -: | - |
+| GND - 1 | GND |
+| VCC - 2 | 3V3 |
+| GDO0 - 3 | G32 |
+| CSN - 4 | G33 + Connection to resistor -> transistor (base) |
+| SCK - 5 | G0 |
+| MOSI - 6 | G26 |
+| MISO/GDO1 - 7 | G36/G25 |
+| DGO2 - 8 | Not Connected |
+
+| SD Card Module | M5StickC |
+| -: | - |
+| 3V3 - 1 | 3V3 |
+| CS - 2 | Transistor (collector) |
+| MOSI - 3 | G26 |
+| CLKK - 4 | G0 |
+| MISO - 5 | G36/G25 |
+| GND - 6 | GND |
+
+
 ## Wiring Diagram
 
 !!! info
+    Please ensure you select Shared SPI
 
-    This setup needs a change to the configuration to work:
+    **CC1101:** `RF -> Config -> RF Module -> CC1101 (Shared SPI)`
 
-    `RF -> Config -> CC1101 (Shared SPI)`
+    **NRF24:** `NRF24 -> Config Pins -> NRF24 (Shared SPI)`
 
 The diagram shows a CC1101, the wiring is the same for an NRF24.
 
