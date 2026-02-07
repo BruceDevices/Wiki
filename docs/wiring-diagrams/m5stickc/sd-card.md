@@ -15,7 +15,7 @@ title: SD Card
 | 3V3 - 1 | 3V3 |
 | CS - 2 | GND |
 | MOSI - 3 | G26 |
-| CLKK - 4 | G0 |
+| CLK - 4 | G0 |
 | MISO - 5 | G36/G25 |
 | GND - 6 | GND |
 

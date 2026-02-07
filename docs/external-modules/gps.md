@@ -65,6 +65,9 @@ You can set the RX and TX pins away from their defaults if required.
 ### [M5Stack StickC - GPS](../wiring-diagrams/m5stickc/gps.md)
 
 
+### [M5StickS3 - GPS](../wiring-diagrams/m5sticks3/gps.md)
+
+
 ### [M5Stack Cardputer - GPS](../wiring-diagrams/cardputer/gps.md)
 
 
