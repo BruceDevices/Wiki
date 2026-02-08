@@ -6,6 +6,11 @@ Features to work with a connected GPS module.
 
 ![GPS](gps.png)
 
+## Module
+
+You will need a [GPS](../external-modules/gps.md) module to use these features, some devices have a built-in GPS module, but you can also use an external one connected to the UART port of the device.
+
+
 ## Wardriving
 
 You can Wardrive using Bruce if you have a GPS module connected to your device.It iwll create a .csv that can be uploaded to WiGLE!

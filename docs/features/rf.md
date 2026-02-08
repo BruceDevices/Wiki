@@ -12,6 +12,11 @@ Using a CC1101 module many RF features can be used like listening for RF signals
 ![RF](rf.png)
 
 
+## Module
+
+You will need a [CC1101](../external-modules/cc1101.md) module to use these features, some devices do include a built in CC1101.
+
+
 ## Scan/Copy
 
 Scan and copy RF signals in ASK/OOK modulation. It will start with the default frequency (433Mhz, common for M5 RF433R and FS1000A modules).
