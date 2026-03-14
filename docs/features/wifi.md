@@ -73,7 +73,7 @@ etc...
 
 ### Deauth Flood
 
-Foods Deauth packets to all Access Points it can find.
+Floods Deauth packets to all Access Points it can find.
 
 
 ## Evil Portal
