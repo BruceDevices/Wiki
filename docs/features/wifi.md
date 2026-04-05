@@ -34,6 +34,93 @@ Scans for a WiFi AP to either:
 * Deauth + Clone and verify, in case you are trying to get password of a WiFi network.
 
 
+## Karma Attack
+
+The Karma attack tricks devices into connecting to your ESP32 by impersonating WiFi networks they're looking for.
+
+When your phone/device wants to connect to WiFi, it constantly broadcasts "probe requests" - basically shouting "Hey, is Starbucks WiFi here?" (or whatever networks it remembers). The Karma attack listens for these probes, then immediately responds saying "Yes, I'm that network!" - even though it's not.
+
+What the New Code Does
+
+1. Sniffs for probe requests - Captures devices asking for SSIDs like "Home WiFi," "Starbucks," etc.
+2. Intelligent response system - Instead of just responding to everything, it:
+   · Tracks clients by fingerprint (not just MAC, since modern devices randomize MACs)
+   · Prioritizes vulnerable clients (devices that have probed for multiple networks)
+   · Rate-limits responses to avoid flooding
+3. Auto Portal Launch - When a device shows interest in an SSID, it can automatically spin up an Evil Portal (fake login page) to capture credentials.
+4. Clone Detection - If it sees many devices probing for the same popular SSID (like "xfinitywifi"), it will clone that network to catch more victims.
+5. Tiered Attack System - Prioritizes attacks based on:
+   · Signal strength (closer devices get higher priority)
+   · How many networks they've probed for
+   · How recently they were seen
+6. Broadcast Mode - Can actively advertise common SSIDs from a database (instead of just waiting for probes), making devices connect without them even asking.
+
+SSID Database for Broadcast Mode
+
+When using Broadcast or Full mode, place ssid_list.txt on SD card root or LittleFS root (one SSID per line). A pre-made list with ~15,000 SSIDs is available at:
+https://github.com/BruceDevices/firmware/tree/main/sd_files
+
+Key Defenses It Handles
+
+· MAC randomization - Uses behavioral fingerprinting (probe patterns, supported rates, etc.) to track devices even when MAC changes
+· Modern security - Can mimic WPA2/WPA3 networks, not just open ones
+
+The Result
+
+The device thinks "Oh, this ESP32 is the network I'm looking for" and tries to connect. Once connected, you can redirect them to a captive portal to steal passwords or just monitor traffic.
+
+---
+
+Main Karma Modes
+
+· Passive Just listens for probes, no responses.
+· Broadcast Actively advertises SSIDs from database.
+· Full Both listens AND broadcasts.
+
+Attack Settings (Toggle ON/OFF)
+
+· Auto Karma - Automatically responds to probe requests
+· Auto Portal - Launches Evil Portal automatically for interested devices
+· Deauth - Sends deauth packets to disconnect clients
+· Beaconing - Sends beacon frames to advertise networks
+· HS Capture - Captures WPA handshakes (for cracking later)
+
+Attack Strategy
+
+· Clone Mode - Detects popular SSIDs and clones them
+· Tiered Attack - Prioritizes by signal strength & activity (High → Medium → Fast)
+· Clone Detection - Automatically identifies & mimics frequently-probed networks
+
+Channel Controls
+
+· Manual channel selection (Next/Prev)
+· Auto channel hopping (interval: 500-3000ms)
+· Smart hop based on activity
+
+Active Broadcast Attack
+
+· Start/Stop broadcasting SSIDs from database
+· Speed: Fast (200ms), Normal (300ms), Slow (500ms)
+· Shows progress & stats
+
+Portal Template
+
+· Select from HTML templates (Google, Router, etc.)
+· Load custom files from SD/LittleFS
+· Password verification option
+
+Other Features
+
+· Rotate MAC - Changes your BSSID periodically
+· Save Probes - Exports captured data to CSV/PCAP
+· View Captures - Check saved portal creds & handshakes
+· Clear Probes - Reset all captured data
+
+---
+
+The attack listens for what devices want, responds pretending to be that network, then optionally launches a fake login page to steal credentials.
+
+
 ### Beacon Spam
 
 Spams SSID frames in the air.
