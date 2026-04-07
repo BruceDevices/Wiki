@@ -550,78 +550,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="BLE Spam Features">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ios-spams" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        iOS Spams
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#swiftpair-spamming" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SwiftPair Spamming
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#android-spam" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Android Spam
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#samsung-devices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Samsung Devices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#spam-all" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Spam All
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ibeacon" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        iBeacon
-      
-    </span>
-  </a>
-  
 </li>
       
     </ul>
@@ -3078,78 +3006,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="BLE Spam Features">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ios-spams" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        iOS Spams
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#swiftpair-spamming" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SwiftPair Spamming
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#android-spam" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Android Spam
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#samsung-devices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Samsung Devices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#spam-all" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Spam All
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ibeacon" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        iBeacon
-      
-    </span>
-  </a>
-  
 </li>
       
     </ul>
@@ -3258,22 +3114,55 @@
 </ul>
 </div>
 <h2 id="ble-spam-features">BLE Spam Features<a class="headerlink" href="#ble-spam-features" title="Permanent link">#</a></h2>
-<h3 id="ios-spams">iOS Spams<a class="headerlink" href="#ios-spams" title="Permanent link">#</a></h3>
-<p>Sends bluetooth device pairing following AppleJuice and SourApple packet samples</p>
-<ul>
-<li><strong><a href="https://github.com/ECTO-1A/AppleJuice">AppleJuice</a>:</strong> iOS Bluetooth pairing spam.</li>
-<li><strong><a href="https://github.com/RapierXbox/ESP32-Sour-Apple">SourApple</a>:</strong> iOS Bluetooth crash exploit.</li>
-</ul>
-<h3 id="swiftpair-spamming">SwiftPair Spamming<a class="headerlink" href="#swiftpair-spamming" title="Permanent link">#</a></h3>
-<p>Send Bluetooth device pairing notifications for Windows (SwiftPair)</p>
-<h3 id="android-spam">Android Spam<a class="headerlink" href="#android-spam" title="Permanent link">#</a></h3>
-<p>Bluetooth pairing notification spamming for Android devices <em>(added in version 1.0.0)</em>.</p>
-<h3 id="samsung-devices">Samsung Devices<a class="headerlink" href="#samsung-devices" title="Permanent link">#</a></h3>
-<p>Bluetooth notification spamming for Samsung devices <em>(added in version 1.0.0)</em>.</p>
-<h3 id="spam-all">Spam All<a class="headerlink" href="#spam-all" title="Permanent link">#</a></h3>
-<p>A universal option to spam all supported devices simultaneously, it is more effective in controlled environments)</p>
-<h2 id="ibeacon">iBeacon<a class="headerlink" href="#ibeacon" title="Permanent link">#</a></h2>
-<p>Simulate an Apple <a href="https://en.m.wikipedia.org/wiki/IBeacon">iBeacon/Airtag</a>. It can be tracked with an app like <a href="https://f-droid.org/en/packages/com.samebits.beacon.locator/">Beacon Locator</a>, which also provides an estimation of the distance.</p>
+<p>iOS Spams
+- AirPods Pro and Apple TV popup spam
+- Legacy SourApple (iOS crash exploit)
+- Legacy AppleJuice (iOS pairing spam)</p>
+<p>Windows Spam
+- SwiftPair pairing notifications with custom name support</p>
+<p>Android Spam
+- Google FastPair pairing notifications</p>
+<p>Samsung Spam
+- Galaxy Watch/Galaxy Buds pairing notifications</p>
+<p>Spam All
+- Cycles through all protocols sequentially (Android → Samsung → Windows → AppleTV → AirPods → SourApple → AppleJuice)</p>
+<p>Custom Spam
+- Advertise any device name with HID service</p>
+<p>iBeacon
+- Simulate an Apple iBeacon/AirTag. Can be tracked with an app like Beacon Locator, which also provides an estimation of the distance</p>
+<h1 id="ble-suite">BLE Suite<a class="headerlink" href="#ble-suite" title="Permanent link">#</a></h1>
+<p>BLE Suite is a comprehensive Bluetooth Low Energy security testing platform.
+It provides reconnaissance, protocol exploitation, and post-exploitation capabilities.</p>
+<p>Success varies by target device firmware and patch level. Modern/patched devices resist most attacks.</p>
+<p>What You Can Do</p>
+<p>Reconnaissance:
+- <strong>Quick Vulnerability Scan</strong> - Tests HFP (CVE-2025-36911) and FastPair vulnerabilities
+- <strong>Deep Device Profiling</strong> - Full service enumeration with characteristic analysis</p>
+<p>Attack Suites:
+- <strong>FastPair Suite</strong> - Memory corruption, state confusion, crypto overflow attacks, popup spam
+- <strong>HFP Suite</strong> - CVE-2025-36911 testing, connection establishment, full attack chain, HID pivoting
+- <strong>Audio Suite</strong> - AVRCP hijacking, audio stack crashing, telephony injection
+- <strong>HID Suite</strong> - Keystroke injection, DuckyScript support, OS-specific exploits</p>
+<p>Advanced Attacks:
+- <strong>Memory Corruption</strong> - Multiple FastPair exploitation techniques
+- <strong>DoS Attacks</strong> - Connection flooding, advertising spam, protocol fuzzing
+- <strong>Payload Delivery</strong> - DuckyScript injection, PIN brute force, auth bypass</p>
+<p>Chain Attacks:
+- <strong>Universal Attack Chain</strong> - Automatically attempts HFP → HID → FastPair based on detected services</p>
+<p>Smart Features:
+- Auto-detects HFP/FastPair services during scan
+- Context-aware attack suggestions
+- Seamless pivot chains (HFP → HID)
+- RSSI-based device sorting</p>
+<p>Usage</p>
+<ol>
+<li>Navigate to BLE Suite from main menu</li>
+<li>Select attack type</li>
+<li>Scan for nearby BLE devices</li>
+<li>Select target</li>
+<li>Execute attack</li>
+</ol>
+<p>Results are displayed on screen and logged to SD if available.</p>
 
 
 
@@ -3294,7 +3183,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 7, 2026 18:18:43 UTC">January 7, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 5, 2026 19:40:02 UTC">April 5, 2026</span>
   </span>
 
     
