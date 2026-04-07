@@ -43,34 +43,70 @@ Simulate a keyboard to deploy DuckyScripts to paired devices.
 
 ## BLE Spam Features
 
-### iOS Spams
+iOS Spams
+- AirPods Pro and Apple TV popup spam
+- Legacy SourApple (iOS crash exploit)
+- Legacy AppleJuice (iOS pairing spam)
 
-Sends bluetooth device pairing following AppleJuice and SourApple packet samples
+Windows Spam
+- SwiftPair pairing notifications with custom name support
 
-* **[AppleJuice](https://github.com/ECTO-1A/AppleJuice):** iOS Bluetooth pairing spam.
-* **[SourApple](https://github.com/RapierXbox/ESP32-Sour-Apple):** iOS Bluetooth crash exploit.
+Android Spam
+- Google FastPair pairing notifications
+
+Samsung Spam
+- Galaxy Watch/Galaxy Buds pairing notifications
+
+Spam All
+- Cycles through all protocols sequentially (Android → Samsung → Windows → AppleTV → AirPods → SourApple → AppleJuice)
+
+Custom Spam
+- Advertise any device name with HID service
+
+iBeacon
+- Simulate an Apple iBeacon/AirTag. Can be tracked with an app like Beacon Locator, which also provides an estimation of the distance
+
+# BLE Suite
+
+BLE Suite is a comprehensive Bluetooth Low Energy security testing platform.
+It provides reconnaissance, protocol exploitation, and post-exploitation capabilities.
+
+Success varies by target device firmware and patch level. Modern/patched devices resist most attacks.
 
 
-### SwiftPair Spamming
+What You Can Do
 
-Send Bluetooth device pairing notifications for Windows (SwiftPair)
+Reconnaissance:
+- **Quick Vulnerability Scan** - Tests HFP (CVE-2025-36911) and FastPair vulnerabilities
+- **Deep Device Profiling** - Full service enumeration with characteristic analysis
+
+Attack Suites:
+- **FastPair Suite** - Memory corruption, state confusion, crypto overflow attacks, popup spam
+- **HFP Suite** - CVE-2025-36911 testing, connection establishment, full attack chain, HID pivoting
+- **Audio Suite** - AVRCP hijacking, audio stack crashing, telephony injection
+- **HID Suite** - Keystroke injection, DuckyScript support, OS-specific exploits
+
+Advanced Attacks:
+- **Memory Corruption** - Multiple FastPair exploitation techniques
+- **DoS Attacks** - Connection flooding, advertising spam, protocol fuzzing
+- **Payload Delivery** - DuckyScript injection, PIN brute force, auth bypass
+
+Chain Attacks:
+- **Universal Attack Chain** - Automatically attempts HFP → HID → FastPair based on detected services
+
+Smart Features:
+- Auto-detects HFP/FastPair services during scan
+- Context-aware attack suggestions
+- Seamless pivot chains (HFP → HID)
+- RSSI-based device sorting
 
 
-### Android Spam
+Usage
 
-Bluetooth pairing notification spamming for Android devices *(added in version 1.0.0)*.
+1. Navigate to BLE Suite from main menu
+2. Select attack type
+3. Scan for nearby BLE devices
+4. Select target
+5. Execute attack
 
-
-### Samsung Devices
-
-Bluetooth notification spamming for Samsung devices *(added in version 1.0.0)*.
-
-
-### Spam All
-
-A universal option to spam all supported devices simultaneously, it is more effective in controlled environments)
-
-
-## iBeacon
-
-Simulate an Apple [iBeacon/Airtag](https://en.m.wikipedia.org/wiki/IBeacon). It can be tracked with an app like [Beacon Locator](https://f-droid.org/en/packages/com.samebits.beacon.locator/), which also provides an estimation of the distance.
+Results are displayed on screen and logged to SD if available.
