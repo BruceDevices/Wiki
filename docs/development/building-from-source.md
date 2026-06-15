@@ -18,6 +18,18 @@ The .bin file will be in the root folder of the project. You can use a [manual f
 
 ## Command Line Build
 
+## Docker build
+
+After you have your docker setup and running, you can build using this commands
+
+```sh
+git clone https://github.com/BruceDevices/Firmware
+cd Firmware
+docker compose run --rm platformio_build bash -c 'pio run -e lilygo-t-embed-cc1101 -t build-firmware'
+```
+
+Choose the device you want to build after the -e flag in pio command, this example is for lilygo-t-embed-cc1101 only
+
 ## Linux build
 
 Requirements
