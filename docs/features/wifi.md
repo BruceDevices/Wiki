@@ -359,3 +359,91 @@ Adds an SSID into the list so you can choose it with ease when opening an Evil P
 ### Remove Evil WiFi
 
 Deletes a previously added SSID.
+
+
+
+
+#Reverse Shell
+
+A WebSocket-powered reverse shell with real-time command output streaming.
+
+The Reverse Shell module transforms the ESP32 into a remote access point, allowing you to connect and execute commands on the target device through a browser-based terminal interface.
+
+##Overview
+
+This module provides a lightweight remote shell over Wi-Fi, featuring:
+
+· Real-time command output via WebSocket (no page refresh needed)
+· Browser-based terminal interface for easy access from any device
+· Telnet fallback for compatibility
+· Live connection status indicator
+· No external dependencies — uses ESPAsyncWebServer and AsyncTCP, already in the codebase
+
+
+##How It Works
+
+1. The ESP32 starts a Wi-Fi Access Point (AP) named BruceShell
+2. You connect your computer/phone to this AP
+3. Open a browser and navigate to http://192.168.4.1
+4. The web interface connects to the shell via WebSocket
+5. You can execute commands and see output in real-time
+
+
+##Quick Start
+
+1. Connect to the ESP32's Wi-Fi
+
+Setting Value
+SSID BruceShell
+Password bruce
+IP Address 192.168.4.1
+Telnet Port 23
+
+2. Open the Web Interface
+
+Navigate to http://192.168.4.1 in your browser. You'll see a terminal-style interface with:
+
+· A command input field
+· Real-time output display
+· Connection status indicator (green = connected, red = disconnected)
+
+3. Execute Commands
+
+Type any command in the input field and press Enter or click Execute. The output will appear in the terminal window immediately.
+
+4. Alternative: Telnet Connection
+
+For advanced users, you can also connect using a telnet client:
+
+telnet 192.168.4.1 23
+
+
+##Interface Features
+
+Element Description
+Status Dot Green when connected, red when disconnected
+Command Input Type commands here and press Enter
+Execute Button Sends the command to the shell
+Clear Button Clears the output window
+Output Window Displays command output in real-time
+
+
+##Common Use Cases
+
+Scenario How To Use
+Quick remote access Connect from any device with a browser
+Troubleshooting Execute diagnostic commands remotely
+Headless operation Access the device without a screen or serial connection
+Pentesting/Red Team Establish a remote shell for further exploration
+
+
+##Commands and Tips
+
+###Basic Commands
+
+Any standard shell command works (e.g., ls, cd, help). The module doesn't provide built‑in commands — it simply forwards inputs to the underlying shell.
+
+###Shell Integration
+
+· Prompt detection: The WebSocket automatically captures output until it sees a shell prompt (>, $, #). This helps ensure you see the response for each command.
+· Command execution: Send one command at a time, and the output will be streamed back to the browser.
