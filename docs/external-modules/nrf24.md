@@ -54,4 +54,4 @@ The NRF24 is a 2.4 GHz low-power RF transceiver module used for short-range wire
 ### [M5Stack Cardputer - CC1101/NRF24](../wiring-diagrams/cardputer/cc1101-nrf24.md)
 
 
-### [M5Stack Cardputer Adv - CC1101/NRF24](../wiring-diagrams/cardputer/cc1101-nrf24.md)
+### [M5Stack Cardputer Adv - CC1101/NRF24](../wiring-diagrams/cardputer-adv/cc1101-nrf24.md)
