@@ -30,7 +30,9 @@ Writable RFID tags allow users to modify the data stored on the tag, facilitatin
 Clonable RFID tags pose a security risk, as cloning involves creating a duplicate of the tag's information. This can lead to unauthorized access or fraudulent activities. Cloning often requires writing to **Block 0**, necessitating a special type of tag that supports this capability.
 
 ### Emulatable RFID Tags
-Using ST25R3916 you can emulate pretty much every tag/protocol/standart, if you find some you can't with it, contact us with the specifications
+
+Using ST25R3916 you can emulate pretty much every tag/protocol/standart, if you find some you can't with it, contact us with the specifications.
+
 Using PN532 is only possible to emulate NDEF and ISO/IEC 1443-4 tags for now!
 
 
