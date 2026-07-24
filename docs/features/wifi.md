@@ -363,13 +363,13 @@ Deletes a previously added SSID.
 
 
 
-#Reverse Shell
+# Reverse Shell
 
 A WebSocket-powered reverse shell with real-time command output streaming.
 
 The Reverse Shell module transforms the ESP32 into a remote access point, allowing you to connect and execute commands on the target device through a browser-based terminal interface.
 
-##Overview
+## Overview
 
 This module provides a lightweight remote shell over Wi-Fi, featuring:
 
@@ -380,7 +380,7 @@ This module provides a lightweight remote shell over Wi-Fi, featuring:
 · No external dependencies — uses ESPAsyncWebServer and AsyncTCP, already in the codebase
 
 
-##How It Works
+## How It Works
 
 1. The ESP32 starts a Wi-Fi Access Point (AP) named BruceShell
 2. You connect your computer/phone to this AP
@@ -389,7 +389,7 @@ This module provides a lightweight remote shell over Wi-Fi, featuring:
 5. You can execute commands and see output in real-time
 
 
-##Quick Start
+## Quick Start
 
 1. Connect to the ESP32's Wi-Fi
 
@@ -418,7 +418,7 @@ For advanced users, you can also connect using a telnet client:
 telnet 192.168.4.1 23
 
 
-##Interface Features
+## Interface Features
 
 Element Description
 Status Dot Green when connected, red when disconnected
@@ -428,7 +428,7 @@ Clear Button Clears the output window
 Output Window Displays command output in real-time
 
 
-##Common Use Cases
+## Common Use Cases
 
 Scenario How To Use
 Quick remote access Connect from any device with a browser
@@ -439,11 +439,11 @@ Pentesting/Red Team Establish a remote shell for further exploration
 
 ##Commands and Tips
 
-###Basic Commands
+### Basic Commands
 
 Any standard shell command works (e.g., ls, cd, help). The module doesn't provide built‑in commands — it simply forwards inputs to the underlying shell.
 
-###Shell Integration
+### Shell Integration
 
 · Prompt detection: The WebSocket automatically captures output until it sees a shell prompt (>, $, #). This helps ensure you see the response for each command.
 · Command execution: Send one command at a time, and the output will be streamed back to the browser.
