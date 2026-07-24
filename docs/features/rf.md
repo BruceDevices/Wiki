@@ -72,7 +72,9 @@ In this function you can Save and replay signals.
 
 ## Custom SubGhz (limited compatibility)
 
-Transmits signals stored in `.sub` files, they can be ones saved by Bruce in the BruceRF folder or others downloaded from internet.
+* Transmits signals stored in `.sub` files, they can be ones saved by Bruce in the BruceRF folder or others downloaded from internet.
+
+* **Supports Decode of Keeloq**.
 
 
 ## Spectrum
