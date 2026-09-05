@@ -10,7 +10,7 @@ Used to add Ethernet support to devices.
 
 ### W5500
 
-[Find on AliExpress](https://www.aliexpress.com/w/wholesale-W5500-Ethernet-Module.html)
+[Find on AliExpress](https://www.aliexpress.com/w/wholesale-W5500-Ethernet-Module.html){target="_blank" rel="noopener"}
 
 ![W5500 Ethernet Module](w5500-ethernet-module.png){ width="200" }
 

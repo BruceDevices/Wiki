@@ -8,15 +8,15 @@ todo: Formatting
 ---
 ## Manual for Coding in JavaScript to Bruce
 
-This section was ported from [justinknight93/Doolittle](https://github.com/justinknight93/Doolittle), who made a very nice job with its JavaScript interpreter.
+This section was ported from [justinknight93/Doolittle](https://github.com/justinknight93/Doolittle){target="_blank" rel="noopener"}, who made a very nice job with its JavaScript interpreter.
 
 Some changes were made and some new functions were added, and more are to be add.
 
-Some [example scripts are here](https://github.com/BruceDevices/firmware/tree/main/sd_files/interpreter).
+Some [example scripts are here](https://github.com/BruceDevices/firmware/tree/main/sd_files/interpreter){target="_blank" rel="noopener"}.
 
-You can copy your favourite scripts in the `/scripts` folder and have them listed in the ["Scripts" menu](https://github.com/BruceDevices/firmware/issues/258).
+You can copy your favourite scripts in the `/BruceJS` folder and have them listed in the ["Scripts" menu](https://github.com/BruceDevices/firmware/issues/258){target="_blank" rel="noopener"}.
 
-For easier development, you can use [this bash script to upload code directly via serial](https://github.com/eadmaster/Bruce/blob/53090dabfdfb1ed19314b99abb441961c29469b2/bin/bruceserialrun).
+For easier development, you can use [this bash script to upload code directly via serial](https://github.com/eadmaster/Bruce/blob/53090dabfdfb1ed19314b99abb441961c29469b2/bin/bruceserialrun){target="_blank" rel="noopener"}.
 
 API Reference for Native Functions Accessible from JS:
 
@@ -32,7 +32,7 @@ API Reference for Native Functions Accessible from JS:
 * [Subghz](#subghzrf-functions)
 * [Badusb](#badusb-functions)
 
-[New alternative Flipper-like API](https://github.com/Tawank/bruce-js-tooling/)
+[New alternative Flipper-like API](https://github.com/Tawank/bruce-js-tooling/){target="_blank" rel="noopener"}
 
 ## General
 
@@ -80,19 +80,19 @@ API Reference for Native Functions Accessible from JS:
 
 ### `analogWrite(pin: number, value: int)`
 
-[same as arduino's function](https://docs.arduino.cc/language-reference/en/functions/analog-io/analogWrite/)
+[same as arduino's function](https://docs.arduino.cc/language-reference/en/functions/analog-io/analogWrite/){target="_blank" rel="noopener"}
 
 ---
 
 ### `digitalRead(pin: number)`
 
-[same as arduino's function](https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/)
+[same as arduino's function](https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/){target="_blank" rel="noopener"}
 
 ---
 
 ### `analogRead(pin: number)`
 
-[same as arduino's function](https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/)
+[same as arduino's function](https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/){target="_blank" rel="noopener"}
 
 ---
 
@@ -491,7 +491,7 @@ API Reference for Native Functions Accessible from JS:
 
 ### `serialCmd(cmd : string)`
 
-**Description**: Execute a supported serial command (see the [list here](../controlling-device/serial.md));
+**Description**: Execute a supported serial command (see the [list here](../../controlling-device/serial.md));
 
 **Parameters**:
 
@@ -548,7 +548,7 @@ API Reference for Native Functions Accessible from JS:
 
 ### `badusbPress(keycode : number)`
 
-[keycodes list](https://github.com/espressif/arduino-esp32/blob/master/libraries/USB/src/USBHIDKeyboard.h)
+[keycodes list](https://github.com/espressif/arduino-esp32/blob/master/libraries/USB/src/USBHIDKeyboard.h){target="_blank" rel="noopener"}
 
 ### `badusbHold(keycode : number)`
 
@@ -558,6 +558,6 @@ API Reference for Native Functions Accessible from JS:
 
 ### `badusbPressRaw(hid_key : number)`
 
-[TinyUSB's HID_KEY_* macros](https://github.com/hathach/tinyusb/blob/master/src/class/hid/hid.h)
+[TinyUSB's HID_KEY_* macros](https://github.com/hathach/tinyusb/blob/master/src/class/hid/hid.h){target="_blank" rel="noopener"}
 
 ---

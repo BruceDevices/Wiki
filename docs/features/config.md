@@ -29,7 +29,7 @@ The config menu contains many settings, some relating to the device and some rel
     * Portrait (-90°)
 * **UI Color** - Choose UI color
     * Range of build in colour schemes
-    * Custom color - Choose custom [RGB565](https://rgbcolorpicker.com/565) values for:
+    * Custom color - Choose custom [RGB565](https://rgbcolorpicker.com/565){target="_blank" rel="noopener"} values for:
         * Primary
         * Secondary
         * Background
@@ -44,7 +44,7 @@ The config menu contains many settings, some relating to the device and some rel
 
 * **LED Color** - Choose LED color
     * Range of build in colours
-    * Custom color - Choose custom [RGB](https://rgbcolorpicker.com/) colour
+    * Custom color - Choose custom [RGB](https://rgbcolorpicker.com/){target="_blank" rel="noopener"} colour
 * **LED Effect** - Choose LED effect
     * **Solid Color** - Constant on
     * **Breathe** - Smooth fade in and out

@@ -17,8 +17,8 @@ Transmit audio on `76-108 MHz` frequencies with a Si4713 module.
 
 It needs to a Si4713. Those modules are supported and known to work:
 
-1. [Adafruit Si4713](https://www.adafruit.com/product/1958)
-2. [CJMCU-4713](https://s.click.aliexpress.com/e/_DCKYlfz)
+1. [Adafruit Si4713](https://www.adafruit.com/product/1958){target="_blank" rel="noopener"}
+2. [CJMCU-4713](https://s.click.aliexpress.com/e/_DCKYlfz){target="_blank" rel="noopener"}
 
 
 ## Audio Input
@@ -50,7 +50,7 @@ An example would be using a phone with a P3 - P3 cable, connected to the transmi
 >
 > It is also possible to place a button or resistor for this operation, if you prefer.
 
-[Example Video](https://www.veed.io/view/d70db376-0591-487c-88f9-bab03479010f?panel=share)
+[Example Video](https://www.veed.io/view/d70db376-0591-487c-88f9-bab03479010f?panel=share){target="_blank" rel="noopener"}
 
 
 ## Features

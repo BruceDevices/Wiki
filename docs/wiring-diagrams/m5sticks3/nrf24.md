@@ -24,6 +24,6 @@ title: NRF24
 
 ### Wiring Diagram
 
-[View on Cirkit Designer](https://app.cirkitdesigner.com/project/92e447e5-b033-42a2-82e4-acce995139ff)
+[View on Cirkit Designer](https://app.cirkitdesigner.com/project/92e447e5-b033-42a2-82e4-acce995139ff){target="_blank" rel="noopener"}
 
 ![M5StickS3 - NRF24](m5sticks3-nrf24.png){ width="400" }

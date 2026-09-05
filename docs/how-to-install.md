@@ -2,17 +2,17 @@
 
 ## Official Web Flasher
 
-The easiest way to install Bruce is using the official [Web Flasher](https://bruce.computer/flasher).
+The easiest way to install Bruce is using the official [Web Flasher](https://bruce.computer/flasher){target="_blank" rel="noopener"}.
 
 
 ## Launcher
 
-Use [Launcher](https://bmorcelli.github.io/Launcher/), once this is flashed to your device you can do over-the-air updates of Bruce and many other firmwares.
+Use [Launcher](https://bmorcelli.github.io/Launcher/){target="_blank" rel="noopener"}, once this is flashed to your device you can do over-the-air updates of Bruce and many other firmwares.
 
 
 ## M5Stack M5Burner
 
-Flash it directly using the [M5Burner tool](https://docs.m5stack.com/en/download), just search for 'Bruce' within the device category you want and click `Burn`.
+Flash it directly using the [M5Burner tool](https://docs.m5stack.com/en/download){target="_blank" rel="noopener"}, just search for 'Bruce' within the device category you want and click `Burn`.
 
 > The official builds will be uploaded by "owner" and have photos
 
@@ -21,7 +21,7 @@ Flash it directly using the [M5Burner tool](https://docs.m5stack.com/en/download
 
 ### Command Line
 
-Download the latest binary from official [Web Flasher](https://bruce.computer/flasher) and flash locally using esptool.py
+Download the latest binary from official [Web Flasher](https://bruce.computer/flasher){target="_blank" rel="noopener"} and flash locally using esptool.py
 
 ```sh
 esptool.py --port /dev/ttyACM0 write_flash 0x00000 Bruce_device_version.bin
@@ -31,6 +31,6 @@ esptool.py --port /dev/ttyACM0 write_flash 0x00000 Bruce_device_version.bin
 
 These are useful if the official flasher does not work for you, or you want to flash a .bin you have created yourself.
 
-[ESPWebTool](https://esptool.spacehuhn.com/)
+[ESPWebTool](https://esptool.spacehuhn.com/){target="_blank" rel="noopener"}
 
-[ESPConnect](https://thelastoutpostworkshop.github.io/ESPConnect/)
+[ESPConnect](https://thelastoutpostworkshop.github.io/ESPConnect/){target="_blank" rel="noopener"}

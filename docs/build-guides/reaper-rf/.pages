@@ -1,0 +1,8 @@
+title: Reaper RF
+arrange:
+  - ordering.md
+  - prepare-pcbs.md
+  - assembly-components.md
+  - assembly-sides.md
+  - assembly-case.md
+  - flashing-testing.md

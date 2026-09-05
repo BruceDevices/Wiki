@@ -1,6 +1,6 @@
 # bruce.conf
 
-This file is used to persist settings between boots and when swapping firmware on your device when using [Launcher](https://bmorcelli.github.io/Launcher/) when you finish running other firmware.
+This file is used to persist settings between boots and when swapping firmware on your device when using [Launcher](https://bmorcelli.github.io/Launcher/){target="_blank" rel="noopener"} when you finish running other firmware.
 
 TODO: Don't store pwd in cleartext :P
 

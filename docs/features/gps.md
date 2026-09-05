@@ -15,7 +15,7 @@ You will need a [GPS](../external-modules/gps.md) module to use these features, 
 
 You can Wardrive using Bruce if you have a GPS module connected to your device.It iwll create a .csv that can be uploaded to WiGLE!
 
-[WiGLE](https://wigle.net/) (Wireless Geographic Logging Engine) is an online platform that collects and maps Wi-Fi and cellular network data globally. Users can upload network data they encounter, view coverage maps, and search for specific networks.
+[WiGLE](https://wigle.net/){target="_blank" rel="noopener"} (Wireless Geographic Logging Engine) is an online platform that collects and maps Wi-Fi and cellular network data globally. Users can upload network data they encounter, view coverage maps, and search for specific networks.
 
 ### How to Use WiGLE
 
@@ -27,15 +27,15 @@ You can Wardrive using Bruce if you have a GPS module connected to your device.I
 
 #### How to Begin
 
-1. Create an Account: [WiGLE.net](https://wigle.net/)
-2. Join the Group "Bruce": Search for Bruce and select "Join". [Group Stats](https://wigle.net/stats#groupstats)
+1. Create an Account: [WiGLE.net](https://wigle.net/){target="_blank" rel="noopener"}
+2. Join the Group "Bruce": Search for Bruce and select "Join". [Group Stats](https://wigle.net/stats#groupstats){target="_blank" rel="noopener"}
 
 
 #### How to upload
 
 ##### Via Bruce Device
 
-1. Go to the website [WiGLE Account](https://wigle.net/account), select the API Token option and copy the entire token from "Encoded for use". (Be careful, this token should not be shared with anyone)
+1. Go to the website [WiGLE Account](https://wigle.net/account){target="_blank" rel="noopener"}, select the API Token option and copy the entire token from "Encoded for use". (Be careful, this token should not be shared with anyone)
 2. Insert the token copied from your WiGLE account into the "wigleBasicToken" line of the "bruce.conf" file at the root of your SD card
 3. Select menu Others > SD Card > BruceWardriving > timestamp_wardriving.csv
 4. Select the "WiGLE Upload" option.
@@ -47,12 +47,12 @@ You can Wardrive using Bruce if you have a GPS module connected to your device.I
 #### Via WiGLE Website
 
 1. Get the `.csv` file off your device from the `BruceWardriving` folder.
-2. Goto [WiGLE Uploads](https://wigle.net/uploads) and upload the `.csv` file. WiGLE.net may take a few hours to process the file is the queue is long
+2. Goto [WiGLE Uploads](https://wigle.net/uploads){target="_blank" rel="noopener"} and upload the `.csv` file. WiGLE.net may take a few hours to process the file is the queue is long
 
 
 ### Tip
 
-On the "Statistics: Manufacturer > SSID/Manufacturer" page ([SSID Stats](https://wigle.net/stats#ssidstats)), you can find a list of the most used Wi-Fi network names globally, which can inspire ideas for Bruce's Evil Portal ([Evil Portal](wifi.md#evil-portal)).
+On the "Statistics: Manufacturer > SSID/Manufacturer" page ([SSID Stats](https://wigle.net/stats#ssidstats){target="_blank" rel="noopener"}), you can find a list of the most used Wi-Fi network names globally, which can inspire ideas for Bruce's Evil Portal ([Evil Portal](wifi.md#evil-portal)).
 
 
 ## GPS Tracker

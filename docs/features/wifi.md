@@ -169,12 +169,12 @@ In Evil Portal mode, Bruce creates a open WiFi, with DNS, DHCP and web server fo
 
 * Evil Portal serves a fake login page that claims to provide internet access if you log in.
 * This is a social engineering attack, and will log the username and passwords entered on the page.
-* You can type the SSID before and change the current SSID by connecting to the portal from your own device and browsing to [http://172.0.0.1/creds](http://172.0.0.1/creds) or [http://172.0.0.1/ssid](http://172.0.0.1/ssid)
+* You can type the SSID before and change the current SSID by connecting to the portal from your own device and browsing to [http://172.0.0.1/creds](http://172.0.0.1/creds){target="_blank" rel="noopener"} or [http://172.0.0.1/ssid](http://172.0.0.1/ssid){target="_blank" rel="noopener"}
 * If your device has an SD Card the usernames and passwords will be logged to Bruce_creds.csv on the SD Card for you to view.
 
 ### Example Portals
 
-For examples of portals you can check [here](https://github.com/BruceDevices/firmware/tree/main/sd_files)
+For examples of portals you can check [here](https://github.com/BruceDevices/firmware/tree/main/sd_files){target="_blank" rel="noopener"}
 
 ### Setting AP Name from HTML
 
@@ -252,7 +252,7 @@ Connect to SSH servers and execute remote commands.
 
 ## DPWO-ESP32
 
-Searches for default credentials for some router operators [more info here](https://github.com/caioluders/DPWO)
+Searches for default credentials for some router operators [more info here](https://github.com/caioluders/DPWO){target="_blank" rel="noopener"}
 
 
 ## RAW Sniffer
@@ -296,7 +296,7 @@ Sends fake ARP responses to all hosts and to the gateway with random MAC address
 
 To be able to connect to a WireGuard tunnel with your cardputer easily, you need to have your WireGuard `.conf` file and place on the SD card root directory called `wg.conf`.
 
-If you don't know how to generate a `.conf` file for WireGuard [read here](https://www.wireguard.com/quickstart/).
+If you don't know how to generate a `.conf` file for WireGuard [read here](https://www.wireguard.com/quickstart/){target="_blank" rel="noopener"}.
 
 
 ## Brucegotchi
@@ -310,7 +310,7 @@ This feature does a lot of things at the same time, such as:
 
 ## Responder
 
-[Responder](https://github.com/lgandx/Responder) is a well known tool for exploiting infrastructures, one of the things it does is LLMNR Poisoning, which is what this function in Bruce does (thanks to [7h30th3r0n3](https://github.com/7h30th3r0n3)).
+[Responder](https://github.com/lgandx/Responder){target="_blank" rel="noopener"} is a well known tool for exploiting infrastructures, one of the things it does is LLMNR Poisoning, which is what this function in Bruce does (thanks to [7h30th3r0n3](https://github.com/7h30th3r0n3){target="_blank" rel="noopener"}).
 
 ## SOCKS4 Proxy
 

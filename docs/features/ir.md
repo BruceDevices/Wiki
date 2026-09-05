@@ -16,22 +16,22 @@ Various Infrared functions including TV-B-Gone, sending and receiving IR command
 ### Built-In Options
 
 * **Infrared Emitter** Most devices come equipped with a built-in IR emitter.
-* **[M5Stack Mini Infrared Emitter & Receiver Unit](https://shop.M5Stack.com/products/ir-unit)** This module offers easier connectivity compared to other options.
+* **[M5Stack Mini Infrared Emitter & Receiver Unit](https://shop.M5Stack.com/products/ir-unit){target="_blank" rel="noopener"}** This module offers easier connectivity compared to other options.
 
 
 ### Unofficial Modules
 
-* **[KY-005](https://arduinomodules.info/ky-005-infrared-transmitter-sensor-module/)**: Infrared Transmitter
-* **[KY-022](https://arduinomodules.info/ky-022-infrared-receiver-module/)**: Infrared Receiver
+* **[KY-005](https://arduinomodules.info/ky-005-infrared-transmitter-sensor-module/){target="_blank" rel="noopener"}**: Infrared Transmitter
+* **[KY-022](https://arduinomodules.info/ky-022-infrared-receiver-module/){target="_blank" rel="noopener"}**: Infrared Receiver
 
 !!! warning
 
-    These KY-* modules may be available under different names and may require modifications for optimal range when used with 3.3V boards. See [source 1](https://www.reddit.com/r/AskElectronics/comments/183mhh6/increase_voltage_power_for_ir_led_powered_by_33v/) and [source 2](https://circuitdigest.com/forums/internet-things/how-interface-hx-53-ir-transmitter-infrared-sensor-module-esp32) for details.*
+    These KY-* modules may be available under different names and may require modifications for optimal range when used with 3.3V boards. See [source 1](https://www.reddit.com/r/AskElectronics/comments/183mhh6/increase_voltage_power_for_ir_led_powered_by_33v/){target="_blank" rel="noopener"} and [source 2](https://circuitdigest.com/forums/internet-things/how-interface-hx-53-ir-transmitter-infrared-sensor-module-esp32){target="_blank" rel="noopener"} for details.*
 
-* **[Elecrow Arduino Infrared Remote Control IOT Smart IR Module](https://www.elecrow.com/arduino-infrared-remote-control-iot-smart-ir-module.html)**: Functions well at 3.3V without requiring modifications.
+* **[Elecrow Arduino Infrared Remote Control IOT Smart IR Module](https://www.elecrow.com/arduino-infrared-remote-control-iot-smart-ir-module.html){target="_blank" rel="noopener"}**: Functions well at 3.3V without requiring modifications.
 * **IR Hats for Raspberry Pi**: Designed for 3.3V operation; untested but expected to work.
-* **[LOLIN D1 IR Shield](https://www.wemos.cc/en/latest/d1_mini_shield/ir.html)**: Requires soldering for setup.
-* **[DIY Board](https://tasmota.github.io/docs/IR-Remote/#related-projects)**: Additional option for custom projects.
+* **[LOLIN D1 IR Shield](https://www.wemos.cc/en/latest/d1_mini_shield/ir.html){target="_blank" rel="noopener"}**: Requires soldering for setup.
+* **[DIY Board](https://tasmota.github.io/docs/IR-Remote/#related-projects){target="_blank" rel="noopener"}**: Additional option for custom projects.
 
 
 ### Default Pinouts
@@ -48,7 +48,7 @@ Various Infrared functions including TV-B-Gone, sending and receiving IR command
 ## Unsupported/Non-Functional Modules
 
 * **YT-IRTM Transmitter/Receiver**: Utilizes a serial connection and supports NEC protocol only.
-* **[Flirc](https://flirc.tv/)**: Other unbranded IR receivers and blasters with USB/USB-C connections, such as [this product](https://www.walmart.com/ip/Universal-Remote-Smartphone-IR-Controller-Adapter-USB-C-Infrared-Blaster-Control-for-Android-Phone-All-in-One-Air-Conditioner-TV-DVD-STB-Black/5426981611?selectedSellerId=101177603).
+* **[Flirc](https://flirc.tv/){target="_blank" rel="noopener"}**: Other unbranded IR receivers and blasters with USB/USB-C connections, such as [this product](https://www.walmart.com/ip/Universal-Remote-Smartphone-IR-Controller-Adapter-USB-C-Infrared-Blaster-Control-for-Android-Phone-All-in-One-Air-Conditioner-TV-DVD-STB-Black/5426981611?selectedSellerId=101177603){target="_blank" rel="noopener"}.
 
 
 ## Features
@@ -60,9 +60,9 @@ Various Infrared functions including TV-B-Gone, sending and receiving IR command
 
 ## Replay Payloads Like Flipper
 
-To access `.ir` files, visit: [Infrared Payloads](https://github.com/BruceDevices/firmware/tree/main/sd_files/infrared).
+To access `.ir` files, visit: [Infrared Payloads](https://github.com/BruceDevices/firmware/tree/main/sd_files/infrared){target="_blank" rel="noopener"}.
 
-[Lucaslhm/Flipper-IRDB](https://github.com/Lucaslhm/Flipper-IRDB) also has so many payloads you can use
+[Lucaslhm/Flipper-IRDB](https://github.com/Lucaslhm/Flipper-IRDB){target="_blank" rel="noopener"} also has so many payloads you can use
 
 
 ### Methods for Transmitting `.ir` Files

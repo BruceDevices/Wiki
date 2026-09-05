@@ -12,14 +12,14 @@ The NRF24 is a 2.4 GHz low-power RF transceiver module used for short-range wire
 
 ### NRF24
 
-[Find on AliExpress](https://www.aliexpress.com/w/wholesale-NRF24.html)
+[Find on AliExpress](https://www.aliexpress.com/w/wholesale-NRF24.html){target="_blank" rel="noopener"}
 
 ![NRF24](nrf24.png){ width="200" }
 
 
 ### GT24
 
-[Find on AliExpress](https://www.aliexpress.com/w/wholesale-GT24.html)
+[Find on AliExpress](https://www.aliexpress.com/w/wholesale-GT24.html){target="_blank" rel="noopener"}
 
 ![GT24](gt24.png){ width="200" }
 
@@ -35,7 +35,7 @@ The NRF24 is a 2.4 GHz low-power RF transceiver module used for short-range wire
 
 ### GT24 Mini
 
-[Find on AliExpress](https://www.aliexpress.com/w/wholesale-GT24-Mini-NRF.html)
+[Find on AliExpress](https://www.aliexpress.com/w/wholesale-GT24-Mini-NRF.html){target="_blank" rel="noopener"}
 
 ![GT24 Mini](gt24-mini.png){ width="200" }
 

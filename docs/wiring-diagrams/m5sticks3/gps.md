@@ -26,6 +26,6 @@ More information GPS modules can be found [here](../../external-modules/gps.md).
 
 ## Wiring Diagram
 
-[View on Cirkit Designer](https://app.cirkitdesigner.com/project/b5a33a07-a097-42eb-b3fa-f36e236c620f)
+[View on Cirkit Designer](https://app.cirkitdesigner.com/project/b5a33a07-a097-42eb-b3fa-f36e236c620f){target="_blank" rel="noopener"}
 
 ![M5StickS3 - GPS](m5sticks3-gps.png){ width="400" }

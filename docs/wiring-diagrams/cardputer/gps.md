@@ -27,7 +27,7 @@ More information GPS modules can be found [here](../../external-modules/gps.md).
 
 ## Wiring Diagram
 
-[View on Cirkit Designer](https://app.cirkitdesigner.com/project/70897d29-5d8f-46f0-995e-28ccf1f0e660)
+[View on Cirkit Designer](https://app.cirkitdesigner.com/project/70897d29-5d8f-46f0-995e-28ccf1f0e660){target="_blank" rel="noopener"}
 
 ![Cardputer - GPS](cardputer-gps.png){ width="400" }
 

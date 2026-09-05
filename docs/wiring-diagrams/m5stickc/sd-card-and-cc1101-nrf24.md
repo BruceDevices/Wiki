@@ -5,9 +5,9 @@ title: SD Card and CC1101/NRF24
 
 ## Items Needed
 
-* [CC1101](../../external-modules/sd-card-module.md#modules)
-* BC547 Transistor - [Find on AliExpress](https://www.aliexpress.com/w/wholesale-BC547.html)
-* Resistors [Find on AliExpress](https://www.aliexpress.com/w/wholesale-Resistors.html)
+* [SD Card Module](../../external-modules/sd-card-module.md#modules)
+* BC547 Transistor - [Find on AliExpress](https://www.aliexpress.com/w/wholesale-BC547.html){target="_blank" rel="noopener"}
+* Resistors [Find on AliExpress](https://www.aliexpress.com/w/wholesale-Resistors.html){target="_blank" rel="noopener"}
     * 1x 10k
     * 1x 5k
 * [CC1101](../../external-modules/cc1101.md#modules)
@@ -52,6 +52,6 @@ title: SD Card and CC1101/NRF24
 
 The diagram shows a CC1101, the wiring is the same for an NRF24.
 
-[View on Cirkit Designer](https://app.cirkitdesigner.com/project/b5f4d910-647c-4dd4-b1b1-efeff06263fa)
+[View on Cirkit Designer](https://app.cirkitdesigner.com/project/b5f4d910-647c-4dd4-b1b1-efeff06263fa){target="_blank" rel="noopener"}
 
 ![M5StickC - SD Card and CC1101](m5stickc-sd-card-and-cc1101.png){ width="400" }

@@ -22,6 +22,6 @@ title: SD Card
 
 ## Wiring Diagram
 
-[View on Cirkit Designer](https://app.cirkitdesigner.com/project/9ca03ade-2c3d-4bd4-9a22-3689bc822359)
+[View on Cirkit Designer](https://app.cirkitdesigner.com/project/9ca03ade-2c3d-4bd4-9a22-3689bc822359){target="_blank" rel="noopener"}
 
 ![M5StickS3 - SD Card](m5sticks3-sd-card.png){ width="400" }

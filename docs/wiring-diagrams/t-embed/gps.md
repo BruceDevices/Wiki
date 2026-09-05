@@ -26,7 +26,7 @@ More information GPS modules can be found [here](../../external-modules/gps.md).
 
 ## Wiring Diagram
 
-[View on Cirkit Designer](https://app.cirkitdesigner.com/project/df94217c-eeab-427a-9252-441953803c0e)
+[View on Cirkit Designer](https://app.cirkitdesigner.com/project/df94217c-eeab-427a-9252-441953803c0e){target="_blank" rel="noopener"}
 
 ![T-Embed - GPS](t-embed-gps.png){ width="400" }
 

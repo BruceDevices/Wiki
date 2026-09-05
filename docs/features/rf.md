@@ -136,18 +136,18 @@ If you are using a StickCPlus (1.1 or 2), you will be presented to two options f
 
 ##### CC1101 (legacy)
 
-This setup is designed to use only the CC1101 in the bus, using [this setup](https://github.com/BruceDevices/firmware/blob/main/media/connections/cc1101_stick.jpg).
+This setup is designed to use only the CC1101 in the bus, using [this setup](https://github.com/BruceDevices/firmware/blob/main/media/connections/cc1101_stick.jpg){target="_blank" rel="noopener"}.
 
 ##### CC1101 (Shared SPI)
 
-This setup is designed to share the SPI bus with the SD Card, but in this case you ned to add a transistor into the circuit, using [this setup](https://github.com/BruceDevices/firmware/blob/main/media/connections/cc1101_stick_SDCard.jpg).
+This setup is designed to share the SPI bus with the SD Card, but in this case you ned to add a transistor into the circuit, using [this setup](https://github.com/BruceDevices/firmware/blob/main/media/connections/cc1101_stick_SDCard.jpg){target="_blank" rel="noopener"}.
 
 
 ## Supported Modules
 
 ### Official Modules
 
-* **[M5Stack RF433R](https://docs.M5Stack.com/en/unit/rf433_r)** and **[RF433T](https://docs.M5Stack.com/en/unit/rf433_t)**
+* **[M5Stack RF433R](https://docs.M5Stack.com/en/unit/rf433_r){target="_blank" rel="noopener"}** and **[RF433T](https://docs.M5Stack.com/en/unit/rf433_t){target="_blank" rel="noopener"}**
     * **Frequency**: Fixed at 433MHz
     * **Modulation**: Only ASK/OOK
     * **Connection**: Easier to connect
@@ -158,7 +158,7 @@ This setup is designed to share the SPI bus with the SD Card, but in this case y
 
 ### Unofficial Modules
 
-* **[FS1000A Transmitter + XY-MK-5V Receiver](https://components101.com/modules/433-mhz-rf-transmitter-module)**
+* **[FS1000A Transmitter + XY-MK-5V Receiver](https://components101.com/modules/433-mhz-rf-transmitter-module){target="_blank" rel="noopener"}**
     * **Frequency**: Fixed (usually 433MHz)
     * **Modulation**: Only ASK/OOK
 
@@ -167,7 +167,7 @@ This setup is designed to share the SPI bus with the SD Card, but in this case y
     The FS1000A and XY-MK-5V can be sold under various names
 
 * **Other Single-Pinned Modules**
-    * [Comparison of Cheap RF Modules](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html)
+    * [Comparison of Cheap RF Modules](http://x311.blogspot.com/2017/10/comparison-of-cheap-rf-modules-with-ask.html){target="_blank" rel="noopener"}
 
 ![RF-Pins](rf-stick-pins.png)
 
@@ -189,7 +189,7 @@ This setup is designed to share the SPI bus with the SD Card, but in this case y
 
 ## Replay Payloads Like Flipper
 
-Bruce can now send raw formats similar to those supported in [this repository](https://github.com/Zero-Sploit/FlipperZero-Subghz-DB/tree/main/subghz).
+Bruce can now send raw formats similar to those supported in [this repository](https://github.com/Zero-Sploit/FlipperZero-Subghz-DB/tree/main/subghz){target="_blank" rel="noopener"}.
 
 ## Methods to Transmit `.sub` Files
 

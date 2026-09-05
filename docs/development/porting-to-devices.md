@@ -1,6 +1,6 @@
 # Porting to Devices
 
-For unsupported boards/devices you have to manually add a new [configuration environment](https://docs.platformio.org/en/latest/projectconf/sections/env/index.html) in the [platformio.ini](https://github.com/BruceDevices/firmware/blob/main/platformio.ini) and `boards` folders, and define the pins for the modules to be connected, buttons and display.
+For unsupported boards/devices you have to manually add a new [configuration environment](https://docs.platformio.org/en/latest/projectconf/sections/env/index.html){target="_blank" rel="noopener"} in the [platformio.ini](https://github.com/BruceDevices/firmware/blob/main/platformio.ini){target="_blank" rel="noopener"} and `boards` folders, and define the pins for the modules to be connected, buttons and display.
 
 Then, [compile the firmware for your new environment](building-from-source.md). Depending on the board more code changes may be needed.
 
@@ -12,7 +12,7 @@ For boards that do not have a display and buttons you can use the [Headless Mode
 
 ## Example Environment
 
-A sample environment for the [esp32-s3-devkitc-1 board](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html) is [defined here](https://github.com/BruceDevices/firmware/blob/main/boards/ESP-General/ESP-General.ini), it should work with any headless ESP32-S3 boards.
+A sample environment for the [esp32-s3-devkitc-1 board](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html){target="_blank" rel="noopener"} is [defined here](https://github.com/BruceDevices/firmware/blob/main/boards/ESP-General/ESP-General.ini){target="_blank" rel="noopener"}, it should work with any headless ESP32-S3 boards.
 
 
 ## Files
@@ -42,14 +42,14 @@ Add entry to `default_envs` section.
 
 This is the board config. Look at other boards for whats needed.
 
-Here is an offical example and what we are actually using [here](https://github.com/platformio/platform-espressif32/blob/master/boards/esp32-s3-devkitc-1.json)
+Here is an offical example and what we are actually using [here](https://github.com/platformio/platform-espressif32/blob/master/boards/esp32-s3-devkitc-1.json){target="_blank" rel="noopener"}
 
 
 ### boards/pinouts/pins_arduino.h
 
 This is where you put the flags and pinouts to the board. Look at other boards for whats needed.
 
-Here is an official example and what we are actually using [here](https://github.com/espressif/arduino-esp32/blob/master/variants/esp32s3/pins_arduino.h)
+Here is an official example and what we are actually using [here](https://github.com/espressif/arduino-esp32/blob/master/variants/esp32s3/pins_arduino.h){target="_blank" rel="noopener"}
 
 
 ### boards/\[board]/interface.cpp

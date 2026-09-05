@@ -10,7 +10,7 @@ Used to add SD card support to devices that do not have a built in SD card reade
 
 ### SD Card Module
 
-[Find on AliExpress](https://www.aliexpress.com/w/wholesale-SD-Card-Module.html)
+[Find on AliExpress](https://www.aliexpress.com/w/wholesale-SD-Card-Module.html){target="_blank" rel="noopener"}
 
 ![SD Card Module](sd-card-module.png){ width="200" }
 

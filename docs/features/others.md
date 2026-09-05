@@ -38,7 +38,7 @@ Records audio from the devices microphone and saves as a `.wav` file.
 
 DuckyScript payloads are supported.
 
-For more info on creating your own DuckyScripts [read here](https://docs.hak5.org/hak5-usb-rubber-ducky/ducky-script-basics/hello-world).
+For more info on creating your own DuckyScripts [read here](https://docs.hak5.org/hak5-usb-rubber-ducky/ducky-script-basics/hello-world){target="_blank" rel="noopener"}.
 
 ### Running BadUSB Scripts
 

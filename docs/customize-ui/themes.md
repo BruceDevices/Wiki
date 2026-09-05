@@ -19,4 +19,4 @@ Config > UI Theme > (Choose FS) > select the .json file and the theme will be se
 
 ## Community Themes
 
-You can find themes in this thread on Bruce Discord [here](https://discord.com/channels/1264994142769909854/1351879900037906462).
+You can find themes in this thread on Bruce Discord [here](https://discord.com/channels/1264994142769909854/1351879900037906462){target="_blank" rel="noopener"}.

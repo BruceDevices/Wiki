@@ -8,7 +8,7 @@ This module can be used to expose a devices SPI bus to help connect other module
 
 ## Modules
 
-[Find on AliExpress](https://www.aliexpress.com/w/wholesale-Micro-SD-Sniffer.html)
+[Find on AliExpress](https://www.aliexpress.com/w/wholesale-Micro-SD-Sniffer.html){target="_blank" rel="noopener"}
 
 ![NEO-6M](micro-sd-sniffer.png){ width="200" }
 

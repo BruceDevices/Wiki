@@ -6,18 +6,18 @@ List of supported commands:
 
 > ir, subghz, music_player, say, led, power, clock, screen, color, tone, gpio, i2c, storage, settings, factory_reset, badusb, js, crypto, uptime, date, free, info, webui, loader
 
-Most of these commands are compatible with the [Flipper Zero CLI](https://docs.flipper.net/development/cli#0Z9fs).
+Most of these commands are compatible with the [Flipper Zero CLI](https://docs.flipper.net/development/cli#0Z9fs){target="_blank" rel="noopener"}.
 
 
 ## How to Send Commands
 
 * Via Web Terminal
-    * [Spacehunh Serial Terminal](https://terminal.spacehuhn.com/)
-    * [ESPConnect](https://thelastoutpostworkshop.github.io/ESPConnect/)
-* Via the [Arduino IDE Serial Monitor](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor/), [Putty](https://pbxbook.com/voip/sputty.html), or any other serial terminal app
+    * [Spacehunh Serial Terminal](https://terminal.spacehuhn.com/){target="_blank" rel="noopener"}
+    * [ESPConnect](https://thelastoutpostworkshop.github.io/ESPConnect/){target="_blank" rel="noopener"}
+* Via the [Arduino IDE Serial Monitor](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor/){target="_blank" rel="noopener"}, [Putty](https://pbxbook.com/voip/sputty.html){target="_blank" rel="noopener"}, or any other serial terminal app
 * Via the terminal/a bash script: `echo "say My name is Bruce" | busybox microcom -s 115200 /dev/ttyACM0  -t 1000`
-* Via a [python script](https://github.com/wh00hw/pyFlipper)
-* From a smartphone using [SerialManager](https://github.com/delletenebre/SerialManager2) or [Serial USB Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_usb_terminal)
+* Via a [python script](https://github.com/wh00hw/pyFlipper){target="_blank" rel="noopener"}
+* From a smartphone using [SerialManager](https://github.com/delletenebre/SerialManager2){target="_blank" rel="noopener"} or [Serial USB Terminal](https://play.google.com/store/apps/details?id=de.kai_morich.serial_usb_terminal){target="_blank" rel="noopener"}
 * Via the [WebUI](webui.md#serial-commands)
     * By using the `Serial Cmd` button
     * Using curl or similar `curl -XPOST "http://bruce.local/cm" -d "cmnd=say My name is Bruce"`

@@ -51,7 +51,7 @@ Theme settings are stored in a `.json` file, following this structure:
 }
 ```
 
-* **Colors (excluding LED):** Codes are in **RGB565**, 16bit pattern, so you need to convert it using [this tool](https://rgbcolorpicker.com/565).
+* **Colors (excluding LED):** Codes are in **RGB565**, 16bit pattern, so you need to convert it using [this tool](https://rgbcolorpicker.com/565){target="_blank" rel="noopener"}.
 * **LED Colors:** Codes are in HEX.
 * **border:** 0 or 1, 1 to keep UI Borders
 * **label:** 0 or 1, 1 to use UI Labels (Use 50px smaller images in this case)
@@ -59,4 +59,4 @@ Theme settings are stored in a `.json` file, following this structure:
 
 ## Theme Builder
 
-You can use [Bruce Theme Builder](https://bruce.computer/build_theme.html) to setup and prepare your images, settings and .json file, it will give you a .zip file that you **need to unzip** somewhere on your device, LittleFS or SD Card.
+You can use [Bruce Theme Builder](https://bruce.computer/build_theme.html){target="_blank" rel="noopener"} to setup and prepare your images, settings and .json file, it will give you a .zip file that you **need to unzip** somewhere on your device, LittleFS or SD Card.

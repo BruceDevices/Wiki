@@ -6,7 +6,7 @@ First you need to clone the repository and build Bruce from sources.
 
 You will find the documentation here:
 
-1. [optional] but recommended: Work from a [Python virtualenv](https://github.com/pyenv/pyenv-virtualenv)
+1. [optional] but recommended: Work from a [Python virtualenv](https://github.com/pyenv/pyenv-virtualenv){target="_blank" rel="noopener"}
     * This is not required if using VSCode and PlatformIO
 2. [Build Firmware](building-from-source.md)
 3. [Install Firmware](../how-to-install.md#manual-flashing)

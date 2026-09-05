@@ -10,7 +10,7 @@ todo: Formatting
 
 ## Manual for Coding in TypeScript to Bruce
 
-To create a new Bruce application with **TypeScript support** and **modern JavaScript (ES6+) features**, use the interactive setup wizard (you need to have [node.js](https://nodejs.org/en) installed):
+To create a new Bruce application with **TypeScript support** and **modern JavaScript (ES6+) features**, use the interactive setup wizard (you need to have [node.js](https://nodejs.org/en){target="_blank" rel="noopener"} installed):
 
 ```sh
 npx create-bruce-app@latest
