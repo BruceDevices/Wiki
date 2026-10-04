@@ -11,17 +11,32 @@ Various WiFi functions including attacks, evil portal, telnet, SSH and Brudcegot
 
 ![WiFi](wifi.png)
 
-## Connect WiFi
+
+## Connect to Wifi
 
 Connects into a chosen network, it will allow you to use **TCP Listener**, **ARP Poisoning**, **Station Deauth**, **TelNet**, **SSH** and **Scan Hosts** functions.
 
 
-## WiFi AP
+## Start WiFi AP
 
 Launches an Access point, so you can connect up to 4 guests to share information between each other.
 
 
-## WiFi Atks
+## Turn Off WiFi
+
+Disconnects and shuts the radio down.
+
+> This entry only appears while WiFi is on.
+
+
+## AP info
+
+Shows details of the network Bruce is connected to: SSID, the saved password, whether the internet is reachable, the supported PHY modes, signal strength, gateway and local IP, channel and channel width, BSSID, the manufacturer looked up from the BSSID, auth mode, WPS state and the unicast and group ciphers.
+
+> This entry only appears while Bruce is connected to a network as a station.
+
+
+## Wifi Atks
 
 ### Target Atks
 
@@ -34,7 +49,7 @@ Scans for a WiFi AP to either:
 * Deauth + Clone and verify, in case you are trying to get password of a WiFi network.
 
 
-## Karma Attack
+### Karma Attack
 
 The Karma attack tricks devices into connecting to your ESP32 by impersonating WiFi networks they're looking for.
 
@@ -121,7 +136,7 @@ Other Features
 The attack listens for what devices want, responds pretending to be that network, then optionally launches a fake login page to steal credentials.
 
 
-### Beacon Spam
+### Beacon SPAM
 
 Spams SSID frames in the air.
 
@@ -130,7 +145,7 @@ Spams SSID frames in the air.
 Spams a list of funny hardcoded SSID names.
 
 
-#### Rick Roll
+#### Ricky Roll
 
 Spams Rick Roll lyrics in SSID names.
 
@@ -140,7 +155,12 @@ Spams Rick Roll lyrics in SSID names.
 Spams random SSIDs, composed by random numbers and letters.
 
 
-#### Custom SSID
+#### Single SSID
+
+Spams a single SSID name that you type in.
+
+
+#### Custom SSIDs
 
 Spams a list of SSIDs writen in a **.txt** file.
 
@@ -161,6 +181,25 @@ etc...
 ### Deauth Flood
 
 Floods Deauth packets to all Access Points it can find.
+
+
+### Enhanced Deauth
+
+Deauth with target selection, instead of flooding everything in range.
+
+#### Station Deauth (Single)
+
+Scans for networks, lists them with signal strength and channel, then deauths the one you pick.
+
+
+#### Deauth All Clients
+
+Deauths every client on a chosen AP. You can pick the AP from a scan or select a channel directly.
+
+
+#### Deauth Target List
+
+Scans for clients on a chosen AP, then lets you pick which of those clients to deauth.
 
 
 ## Evil Portal
@@ -226,6 +265,29 @@ By including a specific tag in the first line of your HTML file, Bruce will auto
     * The feature does not affect the functionality of other HTML content
 
 
+## NetCut
+
+Cuts individual hosts off the network you are connected to by poisoning their ARP cache, and restores them again on demand.
+
+A scan runs first and lists every host it finds, tagged `*VIP`, `[CUT]` or `[TRL]` to show its current state. Selecting a host gives you:
+
+* **Cut** - poisons the host so it loses the gateway.
+* **Resume** - restores the host's ARP cache.
+* **Troll Mode** - cuts and restores the host on a repeating cycle, so its connection drops in and out.
+* **Toggle VIP** - marks the host as protected so the bulk actions skip it. VIP marks are saved to LittleFS and survive a reboot.
+* **Info** - shows the host IP, MAC and current state.
+
+The actions at the bottom of the list apply to every host that is not marked VIP:
+
+* **Cut All**
+* **Troll All**
+* **Resume All**
+* **Troll Timing** - sets how long each troll cycle stays offline and online, 1 to 300 seconds each.
+* **Re-Scan**
+
+This needs a WiFi connection, so you will be prompted to connect if you are not already.
+
+
 ## Listen TCP
 
 Listen for incoming TCP connections on a specified port.
@@ -240,7 +302,20 @@ The ESP32 can connect to a remote server as a client over TCP.
 You can configure the target server's IP address and port, enabling data transmission to and from the server.
 
 
-## TelNet
+## SOCKS4 Proxy
+
+Bruce can act as a **SOCKS4 proxy**, default port **1080**. Traffic from your apps goes through the ESP32.
+
+**How to start:** WiFi → **SOCKS4 Proxy**. The screen shows the ESP32 IP and port; press **Esc** to exit.
+
+**Use it from your PC or phone:**
+
+- **curl:** `curl -x socks4://<esp32_ip>:1080 http://example.com`
+- **proxychains:** On `proxychains.conf` set `socks4 <esp32_ip> 1080`, then run `proxychains <your_command>`.
+
+Make sure the device running curl/SSH/proxychains is on the same network as the ESP32 (e.g. same Wi‑Fi or hotspot).
+
+## TelNET
 
 Connect to TelNet servers and execute remote commands.
 
@@ -255,17 +330,30 @@ Connect to SSH servers and execute remote commands.
 Searches for default credentials for some router operators [more info here](https://github.com/caioluders/DPWO){target="_blank" rel="noopener"}
 
 
-## RAW Sniffer
+## Sniffer
 
 Saves `.pcap` to SD card with raw monitoring, you can also select for it to save only EAPOL/HandShakes and stop spamming deauth packets to detected beacons previously detected.
+
+
+## Channel Analyzer
+
+Hops channels 1 to 11 in promiscuous mode and estimates how busy each one is, drawing a bar per channel with the load percentage, a peak hold and a signal meter.
+
+Up and Down change the dwell time per channel, between 150 and 1000 ms. A longer dwell is more accurate, a shorter one sweeps faster.
+
+
+## Jam Detect
+
+Watches the rate of deauth and disassociation frames per channel and raises an alert when it crosses a threshold, which is how a jamming or deauth attack against you shows up.
+
+Up and Down change the threshold, between 5 and 250 deauths per second. The default is 10.
 
 
 ## Scan Hosts
 
 Does a ARP scan on current network based on the mask (equivalent to arp -a), after that it will list every host online, then you can select some host to have a TCP port scan on selected ports (20, 21, 22, 23, 25, 80, 137, 139, 443, 3389, 8080, 8443, 9090 and more), as seen in "ports" variable on scan_hosts.cpp and let you choose a target host attack such as:
 
-
-## Host Info
+### Host Info
 
 Discover open ports (20, 21, 22, 23, 25, 80, 137, 139, 443, 3389, 8080, 8443, 9090 and more) on the Host.
 
@@ -292,11 +380,26 @@ This is the fist step of a Man-In-The-Middle attack using the 2nd OSI layer vuln
 Sends fake ARP responses to all hosts and to the gateway with random MAC addresses. It can possibly cause CAOS in the network, as all devices won't find the gateway to communicate.
 
 
-## WireGuard Tunneling
+### DHCP Starvation
+
+Floods the network with DHCP discover packets from random MAC addresses to exhaust the DHCP pool, so no new client can get a lease.
+
+
+### MAC Flooding
+
+Floods the network with frames from random source MAC addresses to fill the switch's MAC address table.
+
+
+## Wireguard
 
 To be able to connect to a WireGuard tunnel with your cardputer easily, you need to have your WireGuard `.conf` file and place on the SD card root directory called `wg.conf`.
 
 If you don't know how to generate a `.conf` file for WireGuard [read here](https://www.wireguard.com/quickstart/){target="_blank" rel="noopener"}.
+
+
+## Responder
+
+[Responder](https://github.com/lgandx/Responder){target="_blank" rel="noopener"} is a well known tool for exploiting infrastructures, one of the things it does is LLMNR Poisoning, which is what this function in Bruce does (thanks to [7h30th3r0n3](https://github.com/7h30th3r0n3){target="_blank" rel="noopener"}).
 
 
 ## Brucegotchi
@@ -308,24 +411,7 @@ This feature does a lot of things at the same time, such as:
 * Collect and save HandShakes (EAPOL)
 
 
-## Responder
-
-[Responder](https://github.com/lgandx/Responder){target="_blank" rel="noopener"} is a well known tool for exploiting infrastructures, one of the things it does is LLMNR Poisoning, which is what this function in Bruce does (thanks to [7h30th3r0n3](https://github.com/7h30th3r0n3){target="_blank" rel="noopener"}).
-
-## SOCKS4 Proxy
-
-Bruce can act as a **SOCKS4 proxy**, default port **1080**. Traffic from your apps goes through the ESP32.
-
-**How to start:** WiFi → **SOCKS4 Proxy**. The screen shows the ESP32 IP and port; press **Esc** to exit.
-
-**Use it from your PC or phone:**
-
-- **curl:** `curl -x socks4://<esp32_ip>:1080 http://example.com`
-- **proxychains:** On `proxychains.conf` set `socks4 <esp32_ip> 1080`, then run `proxychains <your_command>`.
-
-Make sure the device running curl/SSH/proxychains is on the same network as the ESP32 (e.g. same Wi‑Fi or hotspot).
-
-## Wifi Password Recovery
+## WiFi Pass Recovery
 
 This feature recovers WiFi passwords using a wordlist of your choice. It attempts to crack a **captured handshake** by testing passwords from the selected wordlist until the correct one is found.
 
@@ -346,16 +432,76 @@ This feature recovers WiFi passwords using a wordlist of your choice. It attempt
 - User should manually put **WORDLIST** inside `/wordlists`
 
 
-
-
-
 ## Config
 
-### Add Evil WiFi
+### Change MAC
+
+Shows the MAC currently in use and whether it is the default or a custom one, then offers:
+
+* **Default MAC** - clears the custom MAC and goes back to the hardware address.
+* **Set MAC** - type a MAC in `XX:YY:ZZ:AA:BB:CC` form.
+* **Random MAC** - generates one.
+
+A custom MAC is saved to [bruce.conf](../configuration/bruce.conf.md).
+
+
+### Add Evil Wifi
 
 Adds an SSID into the list so you can choose it with ease when opening an Evil Portal.
 
 
-### Remove Evil WiFi
+### Remove Evil Wifi
 
 Deletes a previously added SSID.
+
+
+### SSH/Telnet Log
+
+Toggles session logging for SSH and TelNET. With it on and an SD card present, each session is written to `/Bruce/Terminal/` as `<protocol>-<host>_<n>.log`, with a header recording the protocol, host, user and port.
+
+
+### Evil Wifi Settings
+
+#### Set Gateway IP
+
+Choose the Evil Portal gateway address: `172.0.0.1`, `192.168.4.1` or a custom one.
+
+
+#### Password Mode
+
+Choose how much of a captured password is written to the log:
+
+* `Save 'password'` - the whole password
+* `Save 'p******d'` - the first and last character only
+* `Save '*hidden*'` - nothing
+* `Save length` - the length only
+
+
+#### Rename /creds
+
+Changes the endpoint that lists captured credentials, by default `/creds`.
+
+
+#### Allow /creds access
+
+Allows or disallows reading the credential list through the portal.
+
+
+#### Rename /ssid
+
+Changes the endpoint that sets the portal SSID, by default `/ssid`.
+
+
+#### Allow /ssid access
+
+Allows or disallows changing the SSID through the portal.
+
+
+#### Display endpoints
+
+Toggles whether the endpoints are shown on the device screen while the portal is running.
+
+
+### Hidden Networks
+
+Toggles whether network scans include hidden SSIDs.
