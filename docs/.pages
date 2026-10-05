@@ -1,6 +1,7 @@
 arrange:
   - index.md
   - how-to-install.md
+  - companion-apps.md
   - faq.md
   - features
   - controlling-device

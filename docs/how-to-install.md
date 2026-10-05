@@ -5,6 +5,11 @@
 The easiest way to install Bruce is using the official [Web Flasher](https://bruce.computer/flasher){target="_blank" rel="noopener"}.
 
 
+## Bruce App
+
+The [Bruce App](companion-apps.md) flashes the firmware from your desktop (Linux, Windows, macOS) or Android phone. See [Companion Apps](companion-apps.md) for downloads and install steps.
+
+
 ## Launcher
 
 Use [Launcher](https://bmorcelli.github.io/Launcher/){target="_blank" rel="noopener"}, once this is flashed to your device you can do over-the-air updates of Bruce and many other firmwares.
