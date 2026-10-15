@@ -1,17 +1,24 @@
 # ProtoPirate
 
-This is a Bruce JavaScript app backed by native protocol functions in the matching
-firmware. The JS file alone cannot add these functions to an older Bruce binary.
-Emulation is enabled at build time and available immediately in the app. Sending
-still requires an explicit action and confirmation; opening the app never transmits.
+ProtoPirate is available directly under **RF → ProtoPirate** in the full firmware build. No JavaScript file is required for that menu. It shares Bruce beta's native RF protocol engine with Scan/copy, file handling and the optional JS frontend. Emulation is available by default; sending requires an explicit confirmation.
 
 ## Install and open
 
-This page documents the proposed implementation in [firmware PR #2979](https://github.com/BruceDevices/firmware/pull/2979). It is not a claim that the changes have shipped in a stable release.
+This page documents the proposed implementation in [firmware PR #2979](https://github.com/BruceDevices/firmware/pull/2979), not a shipped stable release.
 
-Build or install firmware containing that PR, copy its `sd_files/ProtoPirate.js` to `/BruceJS/ProtoPirate.js` on your SD card, then select **JS Interpreter → ProtoPirate**. The native UI revision also needs the PR's `menu.show` interpreter-context fix; an older matching protocol engine alone is not sufficient for this revision.
+Build or install the matching full firmware for your exact board and open **RF → ProtoPirate**. Its menus, text viewer and file picker are Bruce's existing native controls. Native saves go to `/BruceRF/ProtoPirate/` on the selected SD/LittleFS storage. The feature is excluded from LITE builds and works without the JS interpreter.
 
-Menus use Bruce's native `menu.show`; text and errors use `dialog`; `.sub` selection uses `dialog.pickFile`. They follow Bruce's theme and input handling. Files are checked against the 256 KiB limit before being loaded. Saves go to `/subghz/ProtoPirate/` on SD.
+The existing `sd_files/ProtoPirate.js` remains optional: copy it to `/BruceJS/ProtoPirate.js` on SD and open it through JS Interpreter. It calls the same engine, uses Bruce's native UI bindings and saves to `/subghz/ProtoPirate/` on SD. It requires matching firmware; an old RX1 binary is not sufficient. Both frontends check the 256 KiB input limit before reading a file.
+
+## Shared beta protocol collection
+
+Bruce's beta workflow builds from `dev`; there is no separate `beta` branch. This work uses the current dev baseline below, including its native RF additions. The existing decoder directory contains 83 source/header files, not 83 distinct protocols.
+
+The combined catalogue has **92 unique entries: 66 beta entries and 26 ProtoPirate entries**. The beta entries include the existing registry and dedicated KeeLoq/Chamberlain paths. Each codec implementation exists once: the shared service in `src/modules/rf/protocols/rf_protocol_engine.*` dispatches to the existing beta codecs or the attributed vendor code in `lib/ProtoPirate`. Neither frontend owns a second set of codecs. Keeping the upstream vendor layout makes future updates and attribution reviewable; it does not build another frontend-specific copy.
+
+Native Scan/copy also uses this service. Full PSRAM builds allow 8192 RMT symbols for longer captures, and the capture list has a 200 kB payload limit. The native ProtoPirate receiver adds the four-profile scanning workflow described below; standard Scan/copy retains its existing receive controls.
+
+Ten beta callbacks are placeholders and are correctly listed as receive-only: SecPlus_v2, Somfy_Telis, Somfy_Keytis, CAME_Atomo, Nice_Flor_S and the five TPMS entries. Other existing receive-only entries remain so. For beta encoders, Button/Counter are decoded information rather than editable controls: those encoders consume the saved Key (CAME_Twee consumes Serial). The shared dispatcher passes the full native record to callbacks, preserving those fields. Existing KeeLoq counter regeneration remains in Bruce's established native KeeLoq flow. Supported ProtoPirate variants retain their existing field editing.
 
 ## Source baseline
 
@@ -26,11 +33,11 @@ Menus use Bruce's native `menu.show`; text and errors use `dialog`; `.sub` selec
 
 ## Implemented
 
-The JS app provides live capture using four standard AM/FM presets, frequency
+The native RF app and optional JS app provide live capture using four standard AM/FM presets, frequency
 selection/hopping, decoding saved RAW and decoded `.sub` files, bounded history,
 file browsing, saving, timing analysis, whole-stream RAW replay, and protocol
 emulation with button/counter editing and an automatically advanced counter for each explicit send, as in the upstream emulation scene. Preview/cancel do not commit counter changes. There are 26 imported decoder modules and
-23 encoder modules. An encoder's presence is not evidence of device validation.
+23 encoder modules, alongside the beta catalogue above. An encoder's presence is not evidence of device validation.
 Fiat V2, Ford V3 and Scher-Khan have no encoder in the pinned upstream source.
 
 Capture preserves signed timings, multiple RAW lines and truncation metadata.
@@ -95,6 +102,9 @@ Encrypted frames can remain undeciphered. The app reports these limits in About.
 The other imported protocols have not all passed independent protocol fixtures.
 
 ## Validation
+
+The shared integration passed 55 native API checks under ASan/UBSan, covering the 92-entry catalogue, six ProtoPirate and four beta encode/decode/save round trips, byte-preserved Chrysler 80-bit records and extra metadata, and malformed input rejection. The native RF frontend compiled in the host harness and passed confirmed-send/cancel/history-save flows. The optional JS frontend passed its 12 mocked UI scenarios. These are software checks; the new native menu and combined firmware require physical validation. Previous hardware observations below apply to the earlier RX1 build.
+
 
 - Six synthetic protocol loopbacks pass: Kia V0/V1/V2, Ford V0, Subaru, Mazda V0.
 - Kia V1/V2 and Ford V0: 600 boundary/random/edit/save/reload cycles pass.
