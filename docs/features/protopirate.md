@@ -103,6 +103,15 @@ The other imported protocols have not all passed independent protocol fixtures.
 
 ## Validation
 
+### Native RF integration build
+
+The full `lilygo-t-embed-cc1101` build at firmware commit `890fe5b7d646add2855d386b4e6e09a1b01af6da` succeeded. Application image: **4,467,952 / 4,653,056 bytes** (185,104 bytes free); static RAM: 127,160 bytes. Merged image: 4,533,488 bytes, flash address `0x0`, ESP32-S3 / 16 MB flash. Esptool validated the bootloader/application checksums and hashes; the merged bootloader, partition table and application bytes match their build outputs. Native RF ProtoPirate, the shared protocol service, NRF24 and EMV symbols are present.
+
+Merged-image SHA-256: `1412c88b5c8b82429ea858581950fcf1736d702ca79734285e0d653dac6126b4`.
+
+Build tools: PlatformIO 6.2.0, pioarduino 55.3.39, Arduino 3.3.9, framework libraries 5.5.4+sha.735507283d; official PyPI SCons 4.11.1 and offline web assets were used locally without firmware source changes. The new native frontend also passed confirmed-send/cancel/history-save checks for both a beta protocol and Chrysler, including counter persistence only after successful send. Physical RF/NRF/EMV regression checks remain pending for this image. Existing audio-library compiler warnings remain.
+
+
 The shared integration passed 55 native API checks under ASan/UBSan, covering the 92-entry catalogue, six ProtoPirate and four beta encode/decode/save round trips, byte-preserved Chrysler 80-bit records and extra metadata, and malformed input rejection. The native RF frontend compiled in the host harness and passed confirmed-send/cancel/history-save flows. The optional JS frontend passed its 12 mocked UI scenarios. These are software checks; the new native menu and combined firmware require physical validation. Previous hardware observations below apply to the earlier RX1 build.
 
 
