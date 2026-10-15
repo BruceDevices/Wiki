@@ -89,9 +89,18 @@ a compatibility error. The native RF integration requires rebuilding the firmwar
 
 The custom drawing, scrolling and navigation loops have been removed from the JS frontend. Native menus start at index zero, so the frontend rotates the requested default to the first position and maps the result back. Cancel remains the default for replay/emulation confirmations; preview and cancel do not commit counter changes. Native file selection checks file size before `storage.read`. Receive status uses a nonblocking native TextViewer that is closed after drawing.
 
-Twelve host-mocked UI scenarios passed: exit, picker cancel, oversized file rejection, default cancel, Back cancel, preview, explicit send, noise retry, profile scanning, file-matched receive, unknown-history save and missing-firmware handling. The unchanged engine also passed 38 Chrysler decode calls under ASan/UBSan. These checks do not establish physical RF, display or peripheral behavior. A fresh full firmware build and hardware validation of the native UI remain outstanding.
+Twelve host-mocked UI scenarios passed: exit, picker cancel, oversized file rejection, default cancel, Back cancel, preview, explicit send, noise retry, profile scanning, file-matched receive, unknown-history save and missing-firmware handling. The unchanged engine also passed 38 Chrysler decode calls under ASan/UBSan. These checks do not establish physical RF, display or peripheral behavior. These review-stage results precede the integration build recorded below; physical native UI validation remains outstanding.
 
 ## Evidence and outstanding work
+
+### Native RF integration build
+
+The full `lilygo-t-embed-cc1101` build at firmware commit `890fe5b7d646add2855d386b4e6e09a1b01af6da` succeeded. Application image: **4,467,952 / 4,653,056 bytes** (185,104 bytes free); static RAM: 127,160 bytes. Merged image: 4,533,488 bytes, flash address `0x0`, ESP32-S3 / 16 MB flash. Esptool validated the bootloader/application checksums and hashes; the merged bootloader, partition table and application bytes match their build outputs. Native RF ProtoPirate, the shared protocol service, NRF24 and EMV symbols are present.
+
+Merged-image SHA-256: `1412c88b5c8b82429ea858581950fcf1736d702ca79734285e0d653dac6126b4`.
+
+Build tools: PlatformIO 6.2.0, pioarduino 55.3.39, Arduino 3.3.9, framework libraries 5.5.4+sha.735507283d; official PyPI SCons 4.11.1 and offline web assets were used locally without firmware source changes. The new native frontend also passed confirmed-send/cancel/history-save checks for both a beta protocol and Chrysler, including counter persistence only after successful send. Physical RF/NRF/EMV regression checks remain pending for this image. Existing audio-library compiler warnings remain.
+
 
 - Before the native UI review revision, the full T-Embed CC1101 non-LITE build succeeded. Application: 4,431,040 bytes in a
   4,653,056-byte partition; merged image: 4,496,576 bytes; static RAM: 127,168 bytes.
