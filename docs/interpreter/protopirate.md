@@ -3,9 +3,21 @@
 This documents [firmware PR #2979](https://github.com/BruceDevices/firmware/pull/2979), not a released feature. For installation and use, see [ProtoPirate](../features/protopirate.md).
 
 The PR consolidates #2961 and its #2962 main backport, then adds the ProtoPirate
-4.0 interpreter app and RX1 corrections. The starting commit is current upstream
+4.0 app and RX1 corrections, followed by native RF menu/shared-protocol integration. The starting commit is current upstream
 `dev`, `dc089b920aab214c32fba89ad863a45c821a1627`, not either older PR head.
 The latest dev board, platform, pins and shared-bus implementation are retained.
+
+## Shared RF integration
+
+The full build exposes **RF → ProtoPirate** without requiring JS. `rf_protopirate.cpp` uses native `loopOptions`, `ScrollableTextArea` and filesystem helpers. It includes live reception, profile/frequency settings, file decoding, bounded history, timing analysis, save, RAW replay, encoder preview and explicit transmission.
+
+`rf_protocol_engine.*` is the single dispatch/serialization service used by RF Scan/copy, native file send/load, the native app and `protopirate_js.cpp`. The 92-entry catalogue combines 66 beta entries and 26 vendor entries without copying protocol implementations. `rf_codec.*` extracts the existing pure beta codec functions from hardware-bound RMT sources, preserving their implementations. The upstream ProtoPirate C sources remain in `lib/ProtoPirate` for pinned imports and attribution.
+
+Extended vehicle records retain their complete serialized `.sub` and display text in `RfCodes`, avoiding the legacy 64-bit Key / 16-bit Counter limits. Native callbacks receive all existing fields, including Serial for CAME_Twee. The ten existing stub encoder callbacks are registered as receive-only. Native frames return `fieldEditing:false`: changing their decoded Button/Counter alone would not regenerate the Key. The established KeeLoq counter flow is retained. Supported vendor encoders retain their field-editing behavior.
+
+Full PSRAM builds capture up to 8192 RMT symbols in native Scan/copy too; retained capture payloads are bounded to 200 kB. LITE retains beta-only dispatch and its smaller Scan/copy capture buffer. Protocol lookup, decode and encode do not transmit. `rf_protocol_radio.cpp` provides the shared checked RAW transmit boundary and propagates actual success/failure.
+
+The integration passed 55 ASan/UBSan API checks (92 unique entries; ten protocol round trips; Chrysler 80-bit save preservation; malformed input rejection), native frontend host compilation/send/cancel/history flows, and the existing 12 JS UI scenarios. Full firmware and physical verification are reported separately; old binary measurements do not describe this integration.
 
 ## Change map
 
@@ -56,7 +68,7 @@ have `ok:false` and `error`. `protoTransmit` returns a boolean.
 | --- | --- |
 | `readRaw(timeoutSeconds=10, rxPreset='')` | Existing one-argument callers retain their default profile. Timeout is 1-60 seconds. Named presets require CC1101. Returns a RAW `.sub` string or an empty string. |
 | `protoInfo()` | API version 1, pinned upstream revision, development status, emulation enabled, keystore availability and per-protocol encoder availability. |
-| `protoDecode(subText)` | RAW pulse decoding or deserialization of an existing decoded key file. Returns frames with protocol, text, data, encoder and validation, plus result-limit/serialization status. Loading a key file does not verify an over-air waveform. |
+| `protoDecode(subText)` | RAW pulse decoding or deserialization of an existing decoded key file. Returns frames with protocol, text, data, encoder, validation and optional fieldEditing, plus result-limit/serialization status. Loading a key file does not verify an over-air waveform. |
 | `protoEncode(decodedSubText)` | Generates bounded RAW and updated decoded fields without touching the radio. The frontend advances the counter for an explicit send; preview/cancel do not commit it. |
 | `protoTransmit(rawSubText)` | One complete RMT transaction across all RAW lines. Rejects full-buffer captures, unsupported presets, invalid frequencies and malformed/oversized timings. |
 
@@ -64,15 +76,13 @@ Decode input is limited to 256 KiB, encode input to 16 KiB, durations to 16384,
 each duration to 1,000,000 us and encoded/transmitted total time to 10 seconds.
 At most 16 unique decoded records are returned. Native protocol allocations are
 bounded to 512 active allocations / 1 MiB with C-only error unwinding and cleanup.
-The scoped allocator and shared upload buffer are **not reentrant**: calls belong
-to the existing single JS interpreter thread, not concurrent tasks. Reported
+The vendor scoped allocator and upload buffer are **not reentrant**. The shared service uses an atomic guard: a concurrent vendor call fails with a busy error instead of entering the allocator twice. RF hardware remains owned by the active UI operation. Reported
 validation can be `not-verified`; an encoder module is not proof of integrity or
 acceptance by a real receiver.
 
 The app offers AM650/AM270 and FM476/FM238 live profiles. Older Bruce firmware
 without these native functions must be upgraded with the app; the app displays
-a compatibility error. RX1 itself only replaces the JS file when that matching
-firmware is already installed. Native JS bindings retain the existing
+a compatibility error. The native RF integration requires rebuilding the firmware; copying a JS file cannot add the RF menu entry. Native JS bindings retain the existing
 `LITE_VERSION` / `DISABLE_INTERPRETER` build guards.
 
 ## Native UI review revision
