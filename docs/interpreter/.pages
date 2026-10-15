@@ -1,5 +1,6 @@
 arrange:
   - index.md
   - typescript.md
+  - protopirate.md
   - modules
   - legacy
