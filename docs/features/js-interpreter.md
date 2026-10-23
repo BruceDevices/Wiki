@@ -24,3 +24,8 @@ When uploading scripts to Bruce, keep in mind:
 ## Creating Scripts
 
 More documentation on the JS Interpreter can be found [here](../interpreter/index.md)
+
+
+## ProtoPirate
+
+The [ProtoPirate guide](protopirate.md) covers the proposed JS app, matching firmware requirements, native Bruce controls and known limits.

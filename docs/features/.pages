@@ -10,6 +10,7 @@ arrange:
   - gps.md
   - nrf24.md
   - js-interpreter.md
+  - protopirate.md
   - lora.md
   - others.md
   - clock.md
